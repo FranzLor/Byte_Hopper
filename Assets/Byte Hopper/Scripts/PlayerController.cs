@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-
+        renderer = ghost.GetComponent<Renderer>();
     }
 
     void Update()
@@ -32,6 +32,8 @@ public class PlayerController : MonoBehaviour
         {
             CanIdle();
             CanMove();
+
+            IsVisible();
         }
     }
 
@@ -135,7 +137,18 @@ public class PlayerController : MonoBehaviour
 
     void IsVisible()
     {
+        if (renderer.isVisible)
+        {
+            isVisible = true;
+        }
+        
+        // moved out of camera view
+        if (!renderer.isVisible && isVisible)
+        {
+            Debug.Log("Moved out of view");
 
+            GotHit();
+        }
     }
 
     public void GotHit()
