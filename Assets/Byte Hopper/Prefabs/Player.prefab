@@ -294,7 +294,7 @@ MonoBehaviour:
   isDead: 0
   isJumping: 0
   jumpStart: 0
-  particle: {fileID: 19888810}
+  particle: {fileID: 3028168468016419353}
   ghost: {fileID: 120320}
 --- !u!1 &117530
 GameObject:
