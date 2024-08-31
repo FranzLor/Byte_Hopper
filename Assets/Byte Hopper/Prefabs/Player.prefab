@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 9567504}
   - component: {fileID: 226493756165285617}
   - component: {fileID: 2334133583362046229}
+  - component: {fileID: 7576238670007916787}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -212,7 +213,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 009f95c1118598646a4d8f1358f6162f, type: 3}
   m_Controller: {fileID: 9100000, guid: adaa835a5d865724da5418a292d9a9d3, type: 2}
   m_CullingMode: 1
@@ -273,6 +274,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7576238670007916787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb97e902577e181459c77ce868db8d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDistance: 1
+  moveTime: 0.4
+  colliderDistanceCheck: 1
+  isIdle: 1
+  isMoving: 0
+  isDead: 0
+  isJumping: 0
+  jumpStart: 0
+  particle: {fileID: 19888810}
+  ghost: {fileID: 120320}
 --- !u!1 &117530
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,6 +337,8 @@ GameObject:
   m_Component:
   - component: {fileID: 431454}
   - component: {fileID: 13744910}
+  - component: {fileID: 6352220773927649097}
+  - component: {fileID: 2637901540551803097}
   m_Layer: 0
   m_Name: Toon Ghost
   m_TagString: Untagged
@@ -397,6 +422,39 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0024398267, y: -0.019021064, z: -0.000000029802322}
     m_Extent: {x: 0.6503662, y: 0.43389982, z: 0.40099686}
   m_DirtyAABB: 0
+--- !u!95 &6352220773927649097
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120320}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 009f95c1118598646a4d8f1358f6162f, type: 3}
+  m_Controller: {fileID: 9100000, guid: adaa835a5d865724da5418a292d9a9d3, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2637901540551803097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6592b4aa40130ca49a445d146c70803e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &121266
 GameObject:
   m_ObjectHideFlags: 0

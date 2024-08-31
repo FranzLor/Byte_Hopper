@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveDistance = 1.0f;
     public float moveTime = 0.4f;
-    public float colliderDistance = 1.0f;
+    public float colliderDistanceCheck = 1.0f;
 
     public bool isIdle = true;
     public bool isMoving = false;
@@ -47,8 +47,26 @@ public class PlayerController : MonoBehaviour
     void CheckIfCanMove()
     {
         // raycast to check if can move - collider boxes in front of player
-        // TODO: impl raycast
-        SetMove();
+        RaycastHit hit;
+        Physics.Raycast(this.transform.position, -ghost.transform.up, out hit, colliderDistanceCheck);
+
+        Debug.DrawRay(this.transform.position, -ghost.transform.up * colliderDistanceCheck, Color.red, 2);
+
+        if (hit.collider == null)
+        {
+            SetMove();
+        }
+        else
+        {
+            if (hit.collider.tag == "collider")
+            {
+                Debug.Log("Hit Collider - Cannot Move");
+            }
+            else
+            {
+                SetMove();
+            }
+        }
     }
 
     void SetMove()
