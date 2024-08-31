@@ -20,4 +20,74 @@ public class PlayerController : MonoBehaviour
 
     private Renderer renderer = null;
     private bool isVisible = false;
+
+    void Start()
+    {
+
+    }
+
+    void Update()
+    {
+        CanMove();
+    }
+
+    void CanIdle()
+    {
+
+    }
+
+    void CheckIfCanMove()
+    {
+
+    }
+
+    void SetMove()
+    {
+
+    }
+
+    void CanMove()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Moving(new Vector3 (transform.position.x, transform.position.y, transform.position.z + moveDistance));
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            Moving(new Vector3 (transform.position.x, transform.position.y, transform.position.z - moveDistance));
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            Moving(new Vector3 (transform.position.x - moveDistance, transform.position.y, transform.position.z));
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            Moving(new Vector3 (transform.position.x + moveDistance, transform.position.y, transform.position.z));
+        }
+    }
+
+    void Moving(Vector3 position)
+    {
+        LeanTween.move(this.gameObject, position, moveTime);
+    }
+
+    void MoveComplete()
+    {
+
+    }
+
+    void SetMoveForwardState()
+    {
+
+    }
+
+    void IsVisible()
+    {
+
+    }
+
+    public void GotHit()
+    {
+
+    }
 }
