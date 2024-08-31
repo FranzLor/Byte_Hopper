@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveDistance = 1.0f;
+    public float moveTime = 0.4f;
+    public float colliderDistance = 1.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool isIdle = true;
+    public bool isMoving = false;
+    public bool isDead = false;
+    public bool isJumping = false;
+    public bool jumpStart = false;
+
+    public ParticleSystem particle = null;
+
+    public GameObject ghost = null;
+
+    private Renderer renderer = null;
+    private bool isVisible = false;
 }
