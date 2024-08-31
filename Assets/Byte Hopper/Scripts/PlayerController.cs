@@ -28,8 +28,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        CanIdle();
-        CanMove();
+        if (!isDead)
+        {
+            CanIdle();
+            CanMove();
+        }
     }
 
     void CanIdle()
@@ -137,6 +140,13 @@ public class PlayerController : MonoBehaviour
 
     public void GotHit()
     {
+        isDead = true;
 
+        // play death particle
+        ParticleSystem.EmissionModule em = particle.emission;
+        em.enabled = true;
+
+        // TODO
+        // manager -> game over
     }
 }
