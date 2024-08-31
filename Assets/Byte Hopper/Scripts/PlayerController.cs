@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         if (isIdle)
         {
             // key down for animation to play first
-            if (Input.GetKeyDown(KeyCode.W)) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
             {
                 CheckIfCanMove();
             }
@@ -97,12 +97,14 @@ public class PlayerController : MonoBehaviour
         isJumping = true;
         jumpStart = false;
 
-        LeanTween.move(this.gameObject, position, moveTime);
+        LeanTween.move(this.gameObject, position, moveTime).setOnComplete(MoveComplete);
     }
 
     void MoveComplete()
     {
-
+        // called when tween is complete, resets states and locks
+        isJumping = false;
+        isIdle = true;
     }
 
     void SetMoveForwardState()
