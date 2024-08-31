@@ -48,26 +48,41 @@ public class PlayerController : MonoBehaviour
 
     void CanMove()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (isMoving)
         {
-            Moving(new Vector3 (transform.position.x, transform.position.y, transform.position.z + moveDistance));
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z + moveDistance));
+
+                // updates for distance tracker - points
+                SetMoveForwardState();
+
+            }
+            else if (Input.GetKeyUp(KeyCode.S))
+            {
+                Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z - moveDistance));
+            }
+            else if (Input.GetKeyUp(KeyCode.A))
+            {
+                Moving(new Vector3(transform.position.x - moveDistance, transform.position.y, transform.position.z));
+            }
+            else if (Input.GetKeyUp(KeyCode.D))
+            {
+                Moving(new Vector3(transform.position.x + moveDistance, transform.position.y, transform.position.z));
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.S))
-        {
-            Moving(new Vector3 (transform.position.x, transform.position.y, transform.position.z - moveDistance));
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            Moving(new Vector3 (transform.position.x - moveDistance, transform.position.y, transform.position.z));
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            Moving(new Vector3 (transform.position.x + moveDistance, transform.position.y, transform.position.z));
-        }
+        
     }
 
     void Moving(Vector3 position)
     {
+        // resets locking system
+        isIdle = false;
+        isMoving = false;
+        
+        isJumping = true;
+        jumpStart = false;
+
         LeanTween.move(this.gameObject, position, moveTime);
     }
 
