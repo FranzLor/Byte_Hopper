@@ -28,28 +28,42 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        CanIdle();
         CanMove();
     }
 
     void CanIdle()
     {
-
+        if (isIdle)
+        {
+            // key down for animation to play first
+            if (Input.GetKeyDown(KeyCode.W)) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+            {
+                CheckIfCanMove();
+            }
+        }
     }
 
     void CheckIfCanMove()
     {
-
+        // raycast to check if can move - collider boxes in front of player
+        // TODO: impl raycast
+        SetMove();
     }
 
     void SetMove()
     {
-
+        Debug.Log("Hit Nothing - Can Move");
+        isIdle = false;
+        isMoving = true;
+        jumpStart = true;
     }
 
     void CanMove()
     {
         if (isMoving)
         {
+            // key up for animation - when key released, anim stops, then moves
             if (Input.GetKeyUp(KeyCode.W))
             {
                 Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z + moveDistance));
