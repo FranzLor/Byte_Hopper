@@ -42,11 +42,33 @@ public class Mover : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            Debug.Log("Enter Triggered");
 
+            if (parentOnTrigger)
+            {
+                Debug.Log("Enter Parent Triggered");
+                other.transform.parent = this.transform;
+            }
+
+            if (hitBoxTrigger)
+            {
+                Debug.Log("Enter HitBox Triggered");
+                other.GetComponent<PlayerController>().GotHit();
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-
+        if (other.tag == "Player")
+        {
+            if (parentOnTrigger)
+            {
+                Debug.Log("Exit Parent Triggered");
+                other.transform.parent = null;
+            }
+        }
     }
 }
