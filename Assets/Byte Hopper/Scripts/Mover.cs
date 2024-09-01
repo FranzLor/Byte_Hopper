@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed = 1.0f;
+    public float moveDirection = 0.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool parentOnTrigger = true;
+    public bool hitBoxTrigger = false;
+
+    public GameObject moverObject = null;
+
+    private Renderer renderer = null;
+    private bool isVisible = false;
+
+
 }
