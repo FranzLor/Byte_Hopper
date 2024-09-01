@@ -8,12 +8,28 @@ public class CameraFollow : MonoBehaviour
 
     public GameObject player = null;
 
-    public Vector3 offset = new Vector3(0, 0, 0);
+    public float speed = 0.8f;
+
+    public Vector3 offset = new Vector3(4, 6, -4);
     Vector3 depth = Vector3.zero;
     Vector3 position = Vector3.zero;
 
     void Update()
     {
+        //TODO: manager -> able to play
 
+        if (autoMove)
+        {
+            depth = this.gameObject.transform.position += new Vector3(0.0f, 0.0f, speed * Time.deltaTime);
+            // lerp camera to player or target
+            position = Vector3.Lerp(gameObject.transform.position, player.transform.position + offset, Time.deltaTime);
+            // set camera position
+            gameObject.transform.position = new Vector3(position.x, offset.y, depth.z);
+        }
+        else
+        {
+            position = Vector3.Lerp(gameObject.transform.position, player.transform.position + offset, Time.deltaTime);
+            gameObject.transform.position = new Vector3(position.x, offset.y, position.z);
+        }
     }
 }
