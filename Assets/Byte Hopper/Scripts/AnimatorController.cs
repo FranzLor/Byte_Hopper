@@ -19,18 +19,32 @@ public class AnimatorController : MonoBehaviour
             animator.SetBool("Dead", true);
         }
 
-        if (playerController.jumpStart)
+        if (playerController.isJumping)
         {
-            animator.SetBool("Fly Forward 02 In Place", true);
-        }
-        else if (playerController.isJumping)
-        {
-            animator.SetBool("Fly Forward", true);
+            animator.SetBool("Fly Forward 02", true);
         }
         else
         {
-            animator.SetBool("Fly Forward 02 In Place", false);
-            animator.SetBool("Fly Forward", false);
+            animator.SetBool("Fly Forward 02", false);
+        }
+
+        if (!playerController.isIdle) return;
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
         }
     }
 }

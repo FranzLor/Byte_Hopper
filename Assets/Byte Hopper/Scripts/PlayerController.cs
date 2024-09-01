@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
     public bool isMoving = false;
     public bool isDead = false;
     public bool isJumping = false;
-    public bool jumpStart = false;
 
     public ParticleSystem particle = null;
 
@@ -79,7 +78,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Hit Nothing - Can Move");
         isIdle = false;
         isMoving = true;
-        jumpStart = true;
     }
 
     void CanMove()
@@ -118,7 +116,6 @@ public class PlayerController : MonoBehaviour
         isMoving = false;
         
         isJumping = true;
-        jumpStart = false;
 
         LeanTween.move(this.gameObject, position, moveTime).setOnComplete(MoveComplete);
     }
