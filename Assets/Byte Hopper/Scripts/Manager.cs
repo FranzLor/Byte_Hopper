@@ -16,7 +16,7 @@ public class Manager : MonoBehaviour
 
     private bool canPlay = false;
 
-    public GameObject guiGmaeOver = null;
+    public GameObject guiGameOver = null;
 
     // manager singleton
     private static Manager staticInstance = null;
@@ -31,5 +31,70 @@ public class Manager : MonoBehaviour
 
             return staticInstance;
         }
+    }
+
+
+    void Start()
+    {
+        // TODO: level gen
+
+    }
+
+    public void UpdateCoinCount(int value)
+    {
+        Debug.Log("Coin Collected: " + value);
+
+        currentCoins += value;
+
+        coinCounter.text = currentCoins.ToString();
+    }
+
+    public void UpdateDistanceCount()
+    {
+        Debug.Log("Moved");
+
+        currentDistance += 1;
+
+        distanceCounter.text = currentDistance.ToString();
+
+        // TODO: generate new level piece here
+    }
+
+    public bool CanPlay()
+    {
+        return canPlay;
+    }
+
+    public void StartPlay()
+    {
+        canPlay = true;
+    }
+
+    public void GameOver()
+    {
+        // pauses camera at location
+        camera.GetComponent<CameraShake>().Shake();
+        camera.GetComponent<CameraFollow>().enabled = false;
+
+        GUIGameOver();
+    }
+
+    void GUIGameOver()
+    {
+        Debug.Log("Game Over");
+
+        guiGameOver.SetActive(true);
+    }
+
+    public void PlayAgain()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        SceneManager.LoadScene(scene.name);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
