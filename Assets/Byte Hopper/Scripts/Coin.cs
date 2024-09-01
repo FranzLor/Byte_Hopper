@@ -12,8 +12,7 @@ public class Coin : MonoBehaviour
         {
             Debug.Log("Coin Collected");
 
-            //TODO: add coin to players score
-            //manager -> coin count
+            Manager.instance.UpdateCoinCount(coinValue);
 
             Destroy(this.gameObject);
         }
