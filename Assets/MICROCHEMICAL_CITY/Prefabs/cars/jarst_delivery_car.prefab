@@ -356,10 +356,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa05bbfac7497004096764920b6d3dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0
   moveDirection: 0
-  parentOnTrigger: 1
-  hitBoxTrigger: 0
+  parentOnTrigger: 0
+  hitBoxTrigger: 1
   moverObject: {fileID: 6624870239012223096}
 --- !u!1 &8715283325650710840
 GameObject:
