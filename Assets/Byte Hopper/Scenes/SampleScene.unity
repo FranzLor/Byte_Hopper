@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &14536608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   coinCounter: {fileID: 1717745757}
   distanceCounter: {fileID: 1183621194}
   camera: {fileID: 963194227}
-  guiGameOver: {fileID: 0}
+  guiGameOver: {fileID: 14536607}
 --- !u!1 &546475805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,7 +2043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1803514026
 RectTransform:
   m_ObjectHideFlags: 0
