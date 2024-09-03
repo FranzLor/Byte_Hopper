@@ -82,7 +82,7 @@ Transform:
   m_GameObject: {fileID: 553222861216191350}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: -4}
+  m_LocalPosition: {x: 12, y: 0.5, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -177,6 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875305588020998355}
+  - component: {fileID: 4588920967113406572}
   m_Layer: 0
   m_Name: CoinController
   m_TagString: Untagged
@@ -203,6 +204,28 @@ Transform:
   - {fileID: 28052887638775101}
   m_Father: {fileID: 5841868646988168041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4588920967113406572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468399738577546389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644b2c7f7ee28334b91f07cc3fa9848a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goLeft: 0
+  goRight: 0
+  items:
+  - {fileID: 2788080297058568663, guid: 7f26b9184f41f474ca6abfc5ad8bfcaf, type: 3}
+  spawnerLeft:
+  - {fileID: 158586686815714820}
+  - {fileID: 3892471303724123713}
+  spawnerRight:
+  - {fileID: 1550596668064628318}
+  - {fileID: 6143239794070207020}
 --- !u!1 &3716508961708246591
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 3716508961708246591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 0, z: -10}
+  m_LocalPosition: {x: 12, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285,7 +308,7 @@ Transform:
   m_GameObject: {fileID: 3811436794726393703}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -4}
+  m_LocalPosition: {x: 0, y: 0.5, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -341,7 +364,7 @@ Transform:
   m_GameObject: {fileID: 4220237710085755989}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -380,6 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8488727814081961689}
+  - component: {fileID: 1390219382739175603}
   m_Layer: 0
   m_Name: SpawnController
   m_TagString: Untagged
@@ -406,6 +430,36 @@ Transform:
   - {fileID: 3216795641255897919}
   m_Father: {fileID: 5841868646988168041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1390219382739175603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4548378499577718126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644b2c7f7ee28334b91f07cc3fa9848a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goLeft: 0
+  goRight: 0
+  items:
+  - {fileID: 7881325707343405356, guid: 437d50ab583c4bb49bd65c71a67e9c8c, type: 3}
+  - {fileID: 556090258884664711, guid: c7241e6223ac08f40a2f55cf39bad753, type: 3}
+  - {fileID: 8608858208802613965, guid: e9b79e46e46740d4faecfab304ae518a, type: 3}
+  - {fileID: 7656875385600134692, guid: 14b54c58737ce084abb6e462bb90edca, type: 3}
+  - {fileID: 8796809643635311820, guid: 556ad107d9bf6e4429c6a7c7682d4465, type: 3}
+  - {fileID: 5716175878965141661, guid: 350c08b7f1fc21c4ba1d612797470ece, type: 3}
+  - {fileID: 575353304743769055, guid: 4e0c74edc91dde94fae66a0ee26cc3ff, type: 3}
+  - {fileID: 6122440394992609293, guid: a9c500a1f18836d4ebdd1d74afd73829, type: 3}
+  - {fileID: 1647013947027496583, guid: 51d7d4baae450794f89ca2f23f8f4785, type: 3}
+  spawnerLeft:
+  - {fileID: 3221780437715788027}
+  - {fileID: 1355323807159538491}
+  spawnerRight:
+  - {fileID: 9075897656785414760}
+  - {fileID: 4631245741323237454}
 --- !u!1 &5474805638033188625
 GameObject:
   m_ObjectHideFlags: 0

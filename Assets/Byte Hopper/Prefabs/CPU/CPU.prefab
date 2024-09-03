@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2920525474189804267
+--- !u!1001 &6540637052875116423
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 398828409383936329, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_Name
-      value: CPU
+      value: jarst_processor Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1063761006546238451, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1063761006546238451, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1063761006546238451, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1063761006546238451, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1063761006546238451, guid: aacd9fb9aeb2df249b673940148d156b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
