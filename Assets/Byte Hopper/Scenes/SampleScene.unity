@@ -1156,9 +1156,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 902487170546226138, guid: d016defe51601e541a29689a26c7a2ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2244602566681177697, guid: d016defe51601e541a29689a26c7a2ca, type: 3}
       propertyPath: m_Name
       value: Road1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244602566681177697, guid: d016defe51601e541a29689a26c7a2ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8533233110746115676, guid: d016defe51601e541a29689a26c7a2ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1936,6 +1944,10 @@ PrefabInstance:
     - target: {fileID: 954452054376926431, guid: 5a050fa19592c7f43aaa8a5cdcf38bbc, type: 3}
       propertyPath: m_Name
       value: Road2
+      objectReference: {fileID: 0}
+    - target: {fileID: 954452054376926431, guid: 5a050fa19592c7f43aaa8a5cdcf38bbc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3661196491491103152, guid: 5a050fa19592c7f43aaa8a5cdcf38bbc, type: 3}
       propertyPath: m_LocalPosition.x
