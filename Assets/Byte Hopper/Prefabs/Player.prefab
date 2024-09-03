@@ -287,8 +287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb97e902577e181459c77ce868db8d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDistance: 1
-  moveTime: 0.6
+  moveDistance: 2
+  moveTime: 0.25
   colliderDistanceCheck: 1
   isIdle: 1
   isMoving: 0
