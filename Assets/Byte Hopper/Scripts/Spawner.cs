@@ -68,6 +68,8 @@ public class Spawner : MonoBehaviour
         // TODO remove
         Debug.Log("Object Spawned");
 
+        // make sure to turn off objs in inspector (spawnLeft/spawnRight objs)
+        // since it randomly chooses which side to spawn
         GameObject obj = Instantiate(item) as GameObject;
 
         obj.transform.position = GetSpawnPosition();
