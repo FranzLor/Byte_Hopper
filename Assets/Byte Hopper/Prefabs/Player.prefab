@@ -246,7 +246,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.67, z: 1}
+  m_Size: {x: 1, y: 1.24, z: 1}
   m_Center: {x: 0, y: 0.72, z: 0}
 --- !u!54 &2334133583362046229
 Rigidbody:
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 2
-  moveTime: 0.4
+  moveTime: 0.25
   colliderDistanceCheck: 1
   isIdle: 1
   isMoving: 0
