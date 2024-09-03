@@ -42,13 +42,41 @@ public class Spawner : MonoBehaviour
 
     void SpawnItem()
     {
+        GameObject obj = Instantiate(item) as GameObject;
 
+        obj.transform.position = GetSpawnPosition();
+
+        float direction = 0.0f;
+
+        if (goLeft)
+        {
+            direction = 180.0f;
+        }
+
+        if (!useSpawnPlacement)
+        {
+            obj.GetComponent<Mover>().speed = speed;
+        }
+
+        obj.transform.rotation = obj.transform.rotation * Quaternion.Euler(0, direction, 0);
     }
 
     Vector3 GetSpawnPosition()
     {
-        // TODO: error check fn
-        return Vector3.zero;
+        // random position
+        if (useSpawnPlacement)
+        {
+            return new Vector3(
+                Random.Range(spawnLeftPosition, spawnRightPosition),
+                startPosition.position.y,
+                startPosition.position.z
+            );
+        }
+        // actual starting position
+        else
+        {
+            return startPosition.position;
+        }
     }
 
 }
