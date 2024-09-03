@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8491345434996861530}
+  - component: {fileID: 3221780437715788027}
   m_Layer: 0
   m_Name: Spawner Left
   m_TagString: Untagged
@@ -31,6 +32,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8488727814081961689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3221780437715788027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485499155808739972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 8491345434996861530}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 0
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &553222861216191350
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,6 +65,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 28052887638775101}
+  - component: {fileID: 6143239794070207020}
   m_Layer: 0
   m_Name: Spawner Right
   m_TagString: Untagged
@@ -62,6 +88,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1875305588020998355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6143239794070207020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553222861216191350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 28052887638775101}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 1
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &2794373245893453552
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4827687941666683373}
+  - component: {fileID: 9075897656785414760}
   m_Layer: 0
   m_Name: Spawner Right
   m_TagString: Untagged
@@ -93,6 +144,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8488727814081961689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9075897656785414760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794373245893453552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 4827687941666683373}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 0
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &3468399738577546389
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,6 +212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5508488367489775453}
+  - component: {fileID: 1550596668064628318}
   m_Layer: 0
   m_Name: Spawner Right
   m_TagString: Untagged
@@ -159,6 +235,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1875305588020998355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1550596668064628318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716508961708246591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 5508488367489775453}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 1
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &3811436794726393703
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8791224393853877451}
+  - component: {fileID: 3892471303724123713}
   m_Layer: 0
   m_Name: Spawner Left
   m_TagString: Untagged
@@ -190,6 +291,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1875305588020998355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3892471303724123713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3811436794726393703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 8791224393853877451}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 1
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &4220237710085755989
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4616867557244912940}
+  - component: {fileID: 158586686815714820}
   m_Layer: 0
   m_Name: Spawner Left
   m_TagString: Untagged
@@ -221,6 +347,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1875305588020998355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158586686815714820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220237710085755989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 4616867557244912940}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 1
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &4548378499577718126
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3216795641255897919}
+  - component: {fileID: 4631245741323237454}
   m_Layer: 0
   m_Name: Spawner Right
   m_TagString: Untagged
@@ -287,6 +438,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8488727814081961689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4631245741323237454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5474805638033188625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 3216795641255897919}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 0
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0
 --- !u!1 &6510424099880755667
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902049388986731387}
+  - component: {fileID: 1355323807159538491}
   m_Layer: 0
   m_Name: Spawner Left
   m_TagString: Untagged
@@ -426,3 +602,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8488727814081961689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1355323807159538491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9112177220493776623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100a750762ef5f446bd12bc358121c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 1902049388986731387}
+  delayMin: 2
+  delayMax: 5
+  speedMin: 1
+  speedMax: 6
+  useSpawnPlacement: 0
+  spawnCountMin: 4
+  spawnCountMax: 18
+  item: {fileID: 0}
+  goLeft: 0
+  spawnLeftPosition: 0
+  spawnRightPosition: 0

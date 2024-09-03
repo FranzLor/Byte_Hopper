@@ -32,16 +32,42 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
+        if (useSpawnPlacement)
+        {
+            // static objs
+            int spawnCount = Random.Range(spawnCountMin, spawnCountMax);
 
+            for (int i = 0; i < spawnCount; i++)
+            {
+                SpawnItem();
+            }
+        }
+        else
+        {
+            // moving objs
+            speed = Random.Range(speedMin, speedMax);
+        }
     }
 
     void Update()
     {
+        if (useSpawnPlacement) return;
 
+        if (Time.time > lastTime + delayTime)
+        {
+            lastTime = Time.time;
+
+            delayTime = Random.Range(delayMin, delayMax);
+
+            SpawnItem();
+        }
     }
 
     void SpawnItem()
     {
+        // TODO remove
+        Debug.Log("Object Spawned");
+
         GameObject obj = Instantiate(item) as GameObject;
 
         obj.transform.position = GetSpawnPosition();
