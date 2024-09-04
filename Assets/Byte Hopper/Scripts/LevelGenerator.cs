@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public List<GameOject> platform = new List<GameObject>();
+    // track platform height to account for different platform heights
+    public List<float> height = new List<float>();
+
+    private int randomRange = 0;
+    private float lastPosition = 0;
+    private float lastScale = 0;
+
+    public void randomGenerator()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CreateLevelObject(GameObject obj, float height, int value)
     {
-        
+
     }
 }
+ 
