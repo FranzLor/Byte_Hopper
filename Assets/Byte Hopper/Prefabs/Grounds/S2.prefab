@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 8892817820525043007}
   - component: {fileID: 124924065525188291}
   m_Layer: 0
-  m_Name: Spill2
+  m_Name: S2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
