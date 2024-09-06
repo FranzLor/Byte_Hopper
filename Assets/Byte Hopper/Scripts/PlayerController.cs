@@ -15,10 +15,14 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem particle = null;
 
+    public ParticleSystem splashParticle = null;
+    public bool parentedToObject = false;
+
     public GameObject ghost = null;
 
     private Renderer renderer = null;
     private bool isVisible = false;
+
 
     void Start()
     {
