@@ -86,8 +86,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isMoving)
         {
-            // key up for animation - when key released, anim stops, then moves
-            if (Input.GetKeyUp(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z + moveDistance));
 
@@ -95,15 +94,15 @@ public class PlayerController : MonoBehaviour
                 SetMoveForwardState();
 
             }
-            else if (Input.GetKeyUp(KeyCode.S))
+            else if (Input.GetKeyDown(KeyCode.S))
             {
                 Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z - moveDistance));
             }
-            else if (Input.GetKeyUp(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.A))
             {
                 Moving(new Vector3(transform.position.x - moveDistance, transform.position.y, transform.position.z));
             }
-            else if (Input.GetKeyUp(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D))
             {
                 Moving(new Vector3(transform.position.x + moveDistance, transform.position.y, transform.position.z));
             }
