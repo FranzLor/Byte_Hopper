@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         renderer = ghost.GetComponent<Renderer>();
+
     }
 
     void Update()
@@ -166,9 +167,26 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
 
+
         // play death particle
         ParticleSystem.EmissionModule em = particle.emission;
         em.enabled = true;
+
+        ghost.SetActive(false);
+
+        Manager.instance.GameOver();
+    }
+
+    public void InWater()
+    {
+        isDead = true;
+
+        // play death particle
+        ParticleSystem.EmissionModule em = splashParticle.emission;
+        em.enabled = true;
+
+        // hides player - fish in the water
+        ghost.SetActive(false);
 
         Manager.instance.GameOver();
     }

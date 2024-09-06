@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8588618134736965220}
   - component: {fileID: 1548650766667542607}
   - component: {fileID: 4372865575664298317}
+  - component: {fileID: 7597526368754034526}
   m_Layer: 0
   m_Name: Spill2
   m_TagString: Untagged
@@ -104,12 +105,24 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.16, z: 0}
+--- !u!114 &7597526368754034526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532193244567969794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53dda9c272e0a1540a060aa44ac4cc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2428900416238127658
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,12 +169,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 7877339091902177687}
   delayMin: 3
-  delayMax: 7
-  speedMin: 4
-  speedMax: 12
+  delayMax: 4
+  speedMin: 2
+  speedMax: 4
   useSpawnPlacement: 0
   spawnCountMin: 5
-  spawnCountMax: 10
+  spawnCountMax: 20
   item: {fileID: 0}
   goLeft: 0
   spawnLeftPosition: 0
@@ -212,12 +225,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 9143908353620223581}
   delayMin: 3
-  delayMax: 7
-  speedMin: 4
-  speedMax: 12
+  delayMax: 4
+  speedMin: 2
+  speedMax: 4
   useSpawnPlacement: 0
   spawnCountMin: 5
-  spawnCountMax: 10
+  spawnCountMax: 20
   item: {fileID: 0}
   goLeft: 0
   spawnLeftPosition: 0
@@ -328,12 +341,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 3292930813259161075}
   delayMin: 3
-  delayMax: 7
-  speedMin: 4
-  speedMax: 12
+  delayMax: 4
+  speedMin: 2
+  speedMax: 4
   useSpawnPlacement: 0
   spawnCountMin: 5
-  spawnCountMax: 10
+  spawnCountMax: 20
   item: {fileID: 0}
   goLeft: 0
   spawnLeftPosition: 0
@@ -384,12 +397,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 3553785792264817573}
   delayMin: 3
-  delayMax: 7
-  speedMin: 4
-  speedMax: 12
+  delayMax: 4
+  speedMin: 2
+  speedMax: 4
   useSpawnPlacement: 0
   spawnCountMin: 5
-  spawnCountMax: 10
+  spawnCountMax: 20
   item: {fileID: 0}
   goLeft: 0
   spawnLeftPosition: 0
@@ -412,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.38438126
+      value: 0.44745824
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.z
@@ -424,7 +437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -486,7 +499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.33107775
+      value: 0.38540763
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.z
@@ -498,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -560,7 +573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.38438126
+      value: 0.44745824
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.z
@@ -572,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -634,7 +647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.38438126
+      value: 0.44745824
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalScale.z
@@ -646,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.20000002
       objectReference: {fileID: 0}
     - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
       propertyPath: m_LocalPosition.z
