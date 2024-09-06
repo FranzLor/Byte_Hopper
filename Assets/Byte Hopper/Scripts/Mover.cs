@@ -12,6 +12,7 @@ public class Mover : MonoBehaviour
 
     public GameObject moverObject = null;
 
+    private PlayerController playerController = null;
     private Renderer renderer = null;
     private bool isVisible = false;
 
@@ -50,6 +51,9 @@ public class Mover : MonoBehaviour
             {
                 Debug.Log("Enter Parent Triggered");
                 other.transform.parent = this.transform;
+
+                // Set player as parented to the object (log)
+                other.GetComponent<PlayerController>().parentedToObject = true;
             }
 
             if (hitBoxTrigger)
@@ -67,8 +71,26 @@ public class Mover : MonoBehaviour
             if (parentOnTrigger)
             {
                 Debug.Log("Exit Parent Triggered");
-                other.transform.parent = null;
+
+                // check after a short delay to see if the player is still parented to this log
+                StartCoroutine(DelayedUnparent(other));
             }
         }
     }
+
+    IEnumerator DelayedUnparent(Collider other)
+    {
+        // small delay to wait for the player to see if they enter another log
+        yield return new WaitForSeconds(0.1f);
+
+        // only unparent if the player hasn't already attached to a new log
+        if (other.transform.parent == this.transform)
+        {
+            other.transform.parent = null;
+            other.GetComponent<PlayerController>().parentedToObject = false;
+
+            Debug.Log("Unparented Player from Log");
+        }
+    }
 }
+

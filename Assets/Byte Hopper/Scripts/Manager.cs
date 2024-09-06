@@ -11,6 +11,9 @@ public class Manager : MonoBehaviour
 
     public Camera camera = null;
 
+    public LevelGenerator levelGenerator = null;
+    public int levelCount = 40;
+
     private int currentCoins = 0;
     private int currentDistance = 0;
 
@@ -36,7 +39,11 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        // TODO: level gen
+        for (int i = 0; i < levelCount; i++)
+        {
+            levelGenerator.randomGenerator();
+
+        }
 
     }
 
@@ -57,7 +64,8 @@ public class Manager : MonoBehaviour
 
         distanceCounter.text = currentDistance.ToString();
 
-        // TODO: generate new level piece here
+        // when player moves up, generator piece, constantly generate pieces
+        levelGenerator.randomGenerator();
     }
 
     public bool CanPlay()

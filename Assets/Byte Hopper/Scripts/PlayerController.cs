@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveDistance = 1.0f;
-    public float moveTime = 0.4f;
-    public float colliderDistanceCheck = 1.0f;
+    public float moveDistance = 2.0f;
+    public float moveTime = 0.24f;
+    public float colliderDistanceCheck = 2.0f;
 
     public bool isIdle = true;
     public bool isMoving = false;
@@ -15,14 +15,19 @@ public class PlayerController : MonoBehaviour
 
     public ParticleSystem particle = null;
 
+    public ParticleSystem splashParticle = null;
+    public bool parentedToObject = false;
+
     public GameObject ghost = null;
 
     private Renderer renderer = null;
     private bool isVisible = false;
 
+
     void Start()
     {
         renderer = ghost.GetComponent<Renderer>();
+
     }
 
     void Update()
@@ -52,28 +57,37 @@ public class PlayerController : MonoBehaviour
 
     void CheckIfCanMove()
     {
-        // raycast to check if can move - collider boxes in front of player
+        // Define the forward direction for the raycast
+        Vector3 rayDirection = this.transform.forward;
+
         RaycastHit hit;
-        Physics.Raycast(this.transform.position, -ghost.transform.up, out hit, colliderDistanceCheck);
+        // Cast a ray forward to check for obstacles
+        bool isHit = Physics.Raycast(this.transform.position, rayDirection, out hit, colliderDistanceCheck);
 
-        Debug.DrawRay(this.transform.position, -ghost.transform.up * colliderDistanceCheck, Color.red, 2);
+        // Visualize the ray in the scene view for debugging
+        Debug.DrawRay(this.transform.position, rayDirection * colliderDistanceCheck, Color.red, 1.0f);
 
-        if (hit.collider == null)
+        if (!isHit)
         {
+            // No obstacle in the way, player can move
             SetMove();
         }
         else
         {
-            if (hit.collider.tag == "collider")
+            // Obstacle detected, check if it's tagged as a "collider" (like a tree)
+            if (hit.collider != null && hit.collider.tag == "collider")
             {
-                Debug.Log("Hit Collider - Cannot Move");
+                Debug.Log("Hit Collider - Cannot Move: " + hit.collider.name);
+                // Player cannot move, obstacle detected
             }
             else
             {
+                // Something is hit, but it's not a blocking object
                 SetMove();
             }
         }
     }
+
 
     void SetMove()
     {
@@ -86,8 +100,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isMoving)
         {
-            // key up for animation - when key released, anim stops, then moves
-            if (Input.GetKeyUp(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z + moveDistance));
 
@@ -95,15 +108,15 @@ public class PlayerController : MonoBehaviour
                 SetMoveForwardState();
 
             }
-            else if (Input.GetKeyUp(KeyCode.S))
+            else if (Input.GetKeyDown(KeyCode.S))
             {
                 Moving(new Vector3(transform.position.x, transform.position.y, transform.position.z - moveDistance));
             }
-            else if (Input.GetKeyUp(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.A))
             {
                 Moving(new Vector3(transform.position.x - moveDistance, transform.position.y, transform.position.z));
             }
-            else if (Input.GetKeyUp(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D))
             {
                 Moving(new Vector3(transform.position.x + moveDistance, transform.position.y, transform.position.z));
             }
@@ -154,9 +167,26 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
 
+
         // play death particle
         ParticleSystem.EmissionModule em = particle.emission;
         em.enabled = true;
+
+        ghost.SetActive(false);
+
+        Manager.instance.GameOver();
+    }
+
+    public void InWater()
+    {
+        isDead = true;
+
+        // play death particle
+        ParticleSystem.EmissionModule em = splashParticle.emission;
+        em.enabled = true;
+
+        // hides player - fish in the water
+        ghost.SetActive(false);
 
         Manager.instance.GameOver();
     }

@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45
+      value: 0.433071
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.45
+      value: 0.49050406
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalScale.z
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.19
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8176934571828665334, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8804992503209328972, guid: 0ef6cee49a956e94bbe04099757ead16, type: 3}
       propertyPath: m_Name
-      value: jarst_car Variant
+      value: Car 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -103,7 +103,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.6702468, y: 3.51, z: 7.4412565}
+  m_Size: {x: 3.6702468, y: 3.6, z: 7.5}
   m_Center: {x: 0, y: 1.77, z: 0}
 --- !u!114 &1345370051112564533
 MonoBehaviour:
