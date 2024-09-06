@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveDistance = 1.0f;
-    public float moveTime = 0.4f;
-    public float colliderDistanceCheck = 1.0f;
+    public float moveDistance = 2.0f;
+    public float moveTime = 0.24f;
+    public float colliderDistanceCheck = 2.0f;
 
     public bool isIdle = true;
     public bool isMoving = false;
@@ -52,28 +52,37 @@ public class PlayerController : MonoBehaviour
 
     void CheckIfCanMove()
     {
-        // raycast to check if can move - collider boxes in front of player
+        // Define the forward direction for the raycast
+        Vector3 rayDirection = this.transform.forward;
+
         RaycastHit hit;
-        Physics.Raycast(this.transform.position, -ghost.transform.up, out hit, colliderDistanceCheck);
+        // Cast a ray forward to check for obstacles
+        bool isHit = Physics.Raycast(this.transform.position, rayDirection, out hit, colliderDistanceCheck);
 
-        Debug.DrawRay(this.transform.position, -ghost.transform.up * colliderDistanceCheck, Color.red, 2);
+        // Visualize the ray in the scene view for debugging
+        Debug.DrawRay(this.transform.position, rayDirection * colliderDistanceCheck, Color.red, 1.0f);
 
-        if (hit.collider == null)
+        if (!isHit)
         {
+            // No obstacle in the way, player can move
             SetMove();
         }
         else
         {
-            if (hit.collider.tag == "collider")
+            // Obstacle detected, check if it's tagged as a "collider" (like a tree)
+            if (hit.collider != null && hit.collider.tag == "collider")
             {
-                Debug.Log("Hit Collider - Cannot Move");
+                Debug.Log("Hit Collider - Cannot Move: " + hit.collider.name);
+                // Player cannot move, obstacle detected
             }
             else
             {
+                // Something is hit, but it's not a blocking object
                 SetMove();
             }
         }
     }
+
 
     void SetMove()
     {
