@@ -416,7 +416,7 @@ Transform:
   m_GameObject: {fileID: 4470151287583759616}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0.25}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0.25}
   m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -447,7 +447,6 @@ MonoBehaviour:
   - {fileID: 7656875385600134692, guid: 14b54c58737ce084abb6e462bb90edca, type: 3}
   - {fileID: 8796809643635311820, guid: 556ad107d9bf6e4429c6a7c7682d4465, type: 3}
   - {fileID: 5716175878965141661, guid: 350c08b7f1fc21c4ba1d612797470ece, type: 3}
-  - {fileID: 575353304743769055, guid: 4e0c74edc91dde94fae66a0ee26cc3ff, type: 3}
   - {fileID: 6122440394992609293, guid: a9c500a1f18836d4ebdd1d74afd73829, type: 3}
   - {fileID: 1647013947027496583, guid: 51d7d4baae450794f89ca2f23f8f4785, type: 3}
   spawnerLeft:

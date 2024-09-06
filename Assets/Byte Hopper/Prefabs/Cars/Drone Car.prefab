@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.37
+      value: 0.42617416
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.37
+      value: 0.68581176
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.37
+      value: 0.6199445
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.83
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62,11 +62,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832463098309416618, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495846203949763600, guid: 9a90179b894eeb543bd9994a7147efba, type: 3}
       propertyPath: m_Name
-      value: jarst_drone Variant
+      value: Drone Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -120,5 +120,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.6702468, y: 3.77, z: 7.4412565}
+  m_Size: {x: 3.6702468, y: 3.77, z: 10.01}
   m_Center: {x: 0, y: 1.77, z: 0}

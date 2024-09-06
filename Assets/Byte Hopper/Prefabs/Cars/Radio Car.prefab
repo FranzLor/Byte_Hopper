@@ -14,23 +14,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.54
+      value: 0.5093712
       objectReference: {fileID: 0}
     - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.48
+      value: 0.4306176
       objectReference: {fileID: 0}
     - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: -7.0418377
       objectReference: {fileID: 0}
     - target: {fileID: 8355395109205372558, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8700817289572299828, guid: ec62fb9bed3266747ad21675783a6c34, type: 3}
       propertyPath: m_Name
-      value: jarst_radio_controlled_car Variant
+      value: Radio Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
