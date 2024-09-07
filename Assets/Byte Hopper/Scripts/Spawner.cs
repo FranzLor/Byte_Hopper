@@ -94,11 +94,12 @@ public class Spawner : MonoBehaviour
         // random position
         if (useSpawnPlacement)
         {
-            return new Vector3(
-                Random.Range(spawnLeftPosition, spawnRightPosition),
-                startPosition.position.y,
-                startPosition.position.z
-            );
+            // used int to get rid of decimal spawning - uneven spawning
+            int x = (int)Random.Range(spawnLeftPosition, spawnRightPosition);
+
+            Vector3 position = new Vector3(x, startPosition.position.y, startPosition.position.z);
+
+            return position;
         }
         // actual starting position
         else
