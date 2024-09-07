@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class TrafficLight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject light = null;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "train")
+        {
+            light.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerExit(Collider other)
     {
-        
+        if (other.tag == "train")
+        {
+            light.SetActive(false);
+        }
     }
 }
