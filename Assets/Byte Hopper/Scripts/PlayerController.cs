@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private bool isVisible = false;
 
     public bool enableAngleCheck = true;
-    public float angleCheck = 1.0f;
+    public float angleCheck = 0.25f;
     public float angleCheckDistance = 0.5f;
 
     void Start()
@@ -53,7 +53,15 @@ public class PlayerController : MonoBehaviour
             // key down for animation to play first
             if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
             {
-                CheckIfCanMoveSingleRay();
+                if (enableAngleCheck)
+                {
+                    CheckIfCanMoveAngle();
+
+                }
+                else
+                {
+                    CheckIfCanMoveSingleRay();
+                }
             }
         }
     }
@@ -105,7 +113,37 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(this.transform.position, (-ghost.transform.up + new Vector3(angleCheck, 0, 0)) * (colliderDistanceCheck + angleCheckDistance), Color.green, 2);
         Debug.DrawRay(this.transform.position, (-ghost.transform.up + new Vector3(-angleCheck, 0, 0)) * (colliderDistanceCheck + angleCheckDistance), Color.blue, 2);
 
+        if (hit.collider == null && hitLeft.collider == null && hitRight.collider == null)
+        {
+            // move to area if no collisions
+            SetMove();
+        }
+        else
+        {
+            if (hit.collider != null && hit.collider.tag == "collider")
+            {
+                Debug.Log("Hit Center with Collider");
 
+                isIdle = true;
+            }
+            else if (hitLeft.collider != null && hitLeft.collider.tag == "collider")
+            {
+                Debug.Log("Hit Left with Collider");
+                isIdle = true;
+
+            }
+            else if (hitRight.collider != null && hitRight.collider.tag == "collider")
+            {
+                Debug.Log("Hit Right with Collider");
+                isIdle = true;
+
+            }
+            // if no colliders, move to area
+            else
+            {
+                SetMove();
+            }
+        }
     }
 
 
