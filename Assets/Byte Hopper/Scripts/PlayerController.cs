@@ -190,4 +190,14 @@ public class PlayerController : MonoBehaviour
 
         Manager.instance.GameOver();
     }
+
+    public void Electrified()
+    {
+        isDead = true;
+
+        // play death particle
+
+        ghost.SetActive(false);
+        Manager.instance.GameOver();
+    }
 }
