@@ -4459,6 +4459,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Electric1
       objectReference: {fileID: 0}
+    - target: {fileID: 5222008131319477132, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964029609120099313, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537861227447324330, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: items.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6537861227447324330, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 5232571624970834359, guid: 734e39a7b783c984bb99b781f6c7657e, type: 3}
+    - target: {fileID: 6537861227447324330, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 1383177459386361060, guid: 08760562eeddd3e4586d554230a0d39a, type: 3}
+    - target: {fileID: 6537861227447324330, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 8993241654691880062, guid: ada0f4219bd93f54c8e70ca98d753917, type: 3}
+    - target: {fileID: 6537861227447324330, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 163697685231574326, guid: ec645186b208ca941bb611bcbef617af, type: 3}
+    - target: {fileID: 8138223115338333988, guid: a74a724f925b72549966b0f2f9122dcb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
