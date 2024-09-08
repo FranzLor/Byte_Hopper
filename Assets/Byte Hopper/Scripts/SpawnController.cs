@@ -6,6 +6,7 @@ public class SpawnController : MonoBehaviour
 {
     public bool goLeft = false;
     public bool goRight = false;
+    public bool goBoth = false;
 
     public List<GameObject> items = new List<GameObject>();
 
@@ -21,7 +22,13 @@ public class SpawnController : MonoBehaviour
 
         int direction = Random.Range(0, 2);
 
-        if (direction > 0)
+        if (goBoth)
+        {
+            // fixes the issue of spawning items on only half of the side
+            goLeft = true;
+            goRight = true;
+        }
+        else if (direction > 0)
         {
             goLeft = false;
             goRight = true;
