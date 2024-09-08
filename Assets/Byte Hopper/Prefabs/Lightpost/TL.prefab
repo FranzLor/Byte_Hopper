@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5556100938534724003}
   - component: {fileID: 3693234486784278702}
   m_Layer: 0
-  m_Name: TrainLight
+  m_Name: TL
   m_TagString: collider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
