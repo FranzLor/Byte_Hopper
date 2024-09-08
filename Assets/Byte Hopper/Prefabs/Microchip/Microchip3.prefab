@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1281662008198732453}
   - component: {fileID: 1476083617079063049}
   - component: {fileID: 8993891931159076226}
+  - component: {fileID: 1977308025597743126}
   m_Layer: 0
   m_Name: Microchip3
-  m_TagString: collider
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,8 +105,20 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 28.7, y: 12.93, z: 25.7}
+  m_Size: {x: 24.3, y: 12.93, z: 26.6}
   m_Center: {x: 8.492112, y: 5.2, z: -6.2730303}
+--- !u!114 &1977308025597743126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993241654691880062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b24cd695feb4d49aee039a4d06431f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &777747728183842421
 PrefabInstance:
   m_ObjectHideFlags: 0
