@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour
     public AudioClip audioSplash = null;
     public AudioClip audioElectrified = null;
 
+    // timers for idling
+    private float idleTimer = 0.0f;
+    private float idleThreshold = 3.0f;
+
     void Start()
     {
         renderer = ghost.GetComponent<Renderer>();
@@ -50,6 +54,9 @@ public class PlayerController : MonoBehaviour
             CanMove();
 
             IsVisible();
+
+            // handling idling audio
+            HandleIdleAudio();
         }
     }
 
@@ -70,20 +77,64 @@ public class PlayerController : MonoBehaviour
                 {
                     CheckIfCanMoveSingleRay();
                 }
+
+                // reset timer when moving
+                idleTimer = 0.0f;
             }
         }
     }
 
+    void HandleIdleAudio()
+    {
+        if (isIdle)
+        {
+            idleTimer += Time.deltaTime;
+
+            // if player has been idle for too long
+            if (idleTimer >= idleThreshold)
+            {
+                PlayRandomIdleAudio();
+
+                // reset timer
+                idleTimer = 0.0f;
+            }
+        }
+    }
+
+    void PlayRandomIdleAudio()
+    {
+        AudioClip randomIdleClip = null;
+
+        int randomClip = Random.Range(0, 2);
+
+        if (randomClip == 0)
+        {
+            randomIdleClip = audioIdle1;
+        }
+        else
+        {
+            randomIdleClip = audioIdle2;
+        }
+
+        if (randomIdleClip != null)
+        {
+            PlayAudioClip(randomIdleClip);
+        }
+
+        idleTimer = 0.0f;
+
+    }
+
     void CheckIfCanMoveSingleRay()
     {
-        // Define the forward direction for the raycast
+        // define the forward direction for the raycast
         Vector3 rayDirection = this.transform.forward;
 
         RaycastHit hit;
-        // Cast a ray forward to check for obstacles
+        // cast a ray forward to check for obstacles
         bool isHit = Physics.Raycast(this.transform.position, rayDirection, out hit, colliderDistanceCheck);
 
-        // Visualize the ray in the scene view for debugging
+        // visualize the ray in the scene view for debugging
         Debug.DrawRay(this.transform.position, rayDirection * colliderDistanceCheck, Color.red, 1.0f);
 
         if (!isHit)
@@ -93,15 +144,14 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            // Obstacle detected, check if it's tagged as a "collider" (like a tree)
+            // obstacle detected, check if it's tagged as a "collider" (like a tree)
             if (hit.collider != null && hit.collider.tag == "collider")
             {
                 Debug.Log("Hit Collider - Cannot Move: " + hit.collider.name);
-                // Player cannot move, obstacle detected
             }
             else
             {
-                // Something is hit, but it's not a blocking object
+                // something is hit, but it's not a blocking object
                 SetMove();
             }
         }
