@@ -27,6 +27,13 @@ public class PlayerController : MonoBehaviour
     public float angleCheck = 0.25f;
     public float angleCheckDistance = 0.5f;
 
+    public AudioClip audioIdle1 = null;
+    public AudioClip audioIdle2 = null;
+    public AudioClip audioJump = null;
+    public AudioClip audioHit = null;
+    public AudioClip audioSplash = null;
+    public AudioClip audioElectrified = null;
+
     void Start()
     {
         renderer = ghost.GetComponent<Renderer>();
@@ -57,6 +64,7 @@ public class PlayerController : MonoBehaviour
                 {
                     CheckIfCanMoveAngle();
 
+                    //PlayAudioClip(audioIdle1);
                 }
                 else
                 {
@@ -190,6 +198,8 @@ public class PlayerController : MonoBehaviour
         
         isJumping = true;
 
+        PlayAudioClip(audioJump);
+
         LeanTween.move(this.gameObject, position, moveTime).setOnComplete(MoveComplete);
     }
 
@@ -198,6 +208,9 @@ public class PlayerController : MonoBehaviour
         // called when tween is complete, resets states and locks
         isJumping = false;
         isIdle = true;
+
+        //PlayAudioClip(audioIdle2);
+
     }
 
     void SetMoveForwardState()
@@ -225,10 +238,11 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
 
-
         // play death particle
         ParticleSystem.EmissionModule em = particle.emission;
         em.enabled = true;
+
+        PlayAudioClip(audioHit);
 
         ghost.SetActive(false);
 
@@ -243,6 +257,8 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule em = splashParticle.emission;
         em.enabled = true;
 
+        PlayAudioClip(audioSplash);
+
         // hides player - fish in the water
         ghost.SetActive(false);
 
@@ -255,7 +271,14 @@ public class PlayerController : MonoBehaviour
 
         // play death particle
 
+        PlayAudioClip(audioElectrified);
+
         ghost.SetActive(false);
         Manager.instance.GameOver();
+    }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        this.GetComponent<AudioSource>().PlayOneShot(clip);
     }
 }
