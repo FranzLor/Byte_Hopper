@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7044011007974931087}
   - component: {fileID: 3656212668693632528}
   - component: {fileID: 1710109889198099096}
+  - component: {fileID: 3245893017467842660}
+  - component: {fileID: 4364189417083333450}
   m_Layer: 0
   m_Name: WaterTank1
   m_TagString: collider
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -48.82, y: 0.13, z: -12.69}
-  m_LocalScale: {x: 0.19143629, y: 0.22788611, z: 0.16792613}
+  m_LocalScale: {x: 0.1914363, y: 0.0025320682, z: 0.041981533}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8383680474298829088}
@@ -84,6 +86,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3245893017467842660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5391827125199777238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53dda9c272e0a1540a060aa44ac4cc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4364189417083333450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5391827125199777238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.8, y: 24.3, z: 11.549391}
+  m_Center: {x: 9.371704e-16, y: 8.441298, z: 0}
 --- !u!1 &7006891419643659390
 GameObject:
   m_ObjectHideFlags: 0

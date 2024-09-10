@@ -535,14 +535,6 @@ PrefabInstance:
       value: ZoneSlot1
       objectReference: {fileID: 0}
     - target: {fileID: 6679005912075140980, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.22649585
-      objectReference: {fileID: 0}
-    - target: {fileID: 6679005912075140980, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.011111112
-      objectReference: {fileID: 0}
-    - target: {fileID: 6679005912075140980, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5000222
       objectReference: {fileID: 0}

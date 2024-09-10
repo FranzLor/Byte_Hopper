@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3286404164820860113}
   - component: {fileID: 1888271274674615156}
   - component: {fileID: 4454213901568772030}
+  - component: {fileID: 3026844553366553720}
+  - component: {fileID: 1695309765028131925}
   m_Layer: 0
   m_Name: jarst_water_tank
   m_TagString: collider
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -84.1298, y: -59.944805, z: -34.870155}
-  m_LocalScale: {x: 0.19143629, y: 0.22788611, z: 0.16792613}
+  m_LocalScale: {x: 0.1914363, y: 0.0025320682, z: 0.08396307}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5947396882023617670}
@@ -84,6 +86,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3026844553366553720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796866767118575211}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.47, y: 22.4, z: 16.7}
+  m_Center: {x: 0.00000011920929, y: 8.441298, z: 0}
+--- !u!114 &1695309765028131925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2796866767118575211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53dda9c272e0a1540a060aa44ac4cc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5053586445899732516
 GameObject:
   m_ObjectHideFlags: 0

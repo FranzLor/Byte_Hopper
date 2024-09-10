@@ -471,14 +471,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2280166510185814379}
     m_Modifications:
     - target: {fileID: 4108153294492683327, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.048298832
-      objectReference: {fileID: 0}
-    - target: {fileID: 4108153294492683327, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.008622304
-      objectReference: {fileID: 0}
-    - target: {fileID: 4108153294492683327, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5238889
       objectReference: {fileID: 0}
@@ -521,14 +513,6 @@ PrefabInstance:
     - target: {fileID: 4432430362471726187, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
       propertyPath: m_Name
       value: Bus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132467990033095681, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132467990033095681, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

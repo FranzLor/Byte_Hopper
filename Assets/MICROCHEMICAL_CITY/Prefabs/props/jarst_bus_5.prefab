@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1590539767247474617}
   - component: {fileID: 2431205925644927004}
   - component: {fileID: 457563556778669270}
+  - component: {fileID: 8463460261115039377}
   m_Layer: 0
   m_Name: jarst_bus_5
   m_TagString: collider
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.642311, y: -59.944805, z: -74.28212}
-  m_LocalScale: {x: 1.1171, y: 1, z: 1}
+  m_LocalScale: {x: 0.279275, y: 1, z: 0.011111112}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1801509362542523813}
@@ -84,6 +85,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8463460261115039377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114840046918653187}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.91, y: 6.9186225, z: 8.38}
+  m_Center: {x: -1.9738693, y: 3.3972313, z: 1.611604}
 --- !u!1001 &5927642478989095078
 PrefabInstance:
   m_ObjectHideFlags: 0

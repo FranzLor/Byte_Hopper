@@ -1201,18 +1201,6 @@ PrefabInstance:
       value: WaterTank1
       objectReference: {fileID: 0}
     - target: {fileID: 3286404164820860113, guid: c382aef824f256045905b62afa602ed1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1914363
-      objectReference: {fileID: 0}
-    - target: {fileID: 3286404164820860113, guid: c382aef824f256045905b62afa602ed1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0025320682
-      objectReference: {fileID: 0}
-    - target: {fileID: 3286404164820860113, guid: c382aef824f256045905b62afa602ed1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.08396307
-      objectReference: {fileID: 0}
-    - target: {fileID: 3286404164820860113, guid: c382aef824f256045905b62afa602ed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.53611106
       objectReference: {fileID: 0}

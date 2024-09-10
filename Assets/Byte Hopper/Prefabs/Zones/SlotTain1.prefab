@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6418916553197616805}
   - component: {fileID: 4552337444902015517}
   - component: {fileID: 1217605172562025243}
+  - component: {fileID: 2622920871524672569}
   m_Layer: 0
   m_Name: SlotTain1
   m_TagString: collider
@@ -26,9 +27,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8659425545551117413}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -45.21, y: -0.37, z: -11.14}
-  m_LocalScale: {x: 0.32674578, y: 0.87377715, z: 0.81363404}
+  m_LocalScale: {x: 0.16337287, y: 0.87377715, z: 0.00904038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2622920871524672569
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8659425545551117413}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.85, y: 5.1, z: 7.35}
+  m_Center: {x: 4.8254604, y: 1.999956, z: -2.4618201}

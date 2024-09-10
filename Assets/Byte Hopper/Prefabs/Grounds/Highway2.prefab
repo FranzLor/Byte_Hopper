@@ -1055,14 +1055,6 @@ PrefabInstance:
       value: Slot2
       objectReference: {fileID: 0}
     - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.099156804
-      objectReference: {fileID: 0}
-    - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.011111112
-      objectReference: {fileID: 0}
-    - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.49999997
       objectReference: {fileID: 0}
