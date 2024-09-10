@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 2
   moveTime: 0.24
-  colliderDistanceCheck: 1.5
+  colliderDistanceCheck: 1
   isIdle: 1
   isMoving: 0
   isDead: 0
@@ -301,8 +301,8 @@ MonoBehaviour:
   parentedToObject: 0
   ghost: {fileID: 120320}
   enableAngleCheck: 1
-  angleCheck: 0.2
-  angleCheckDistance: 0.5
+  angleCheck: 0.45
+  angleCheckDistance: 2
   audioIdle1: {fileID: 8300000, guid: 7e8f00f64ea0cc644ba1776d9b43299c, type: 3}
   audioIdle2: {fileID: 8300000, guid: 90edf041af1ae284d8b57637baaad334, type: 3}
   audioJump: {fileID: 8300000, guid: 3ae19417b975fae43a2d07e46b34fbf5, type: 3}
@@ -334,7 +334,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
