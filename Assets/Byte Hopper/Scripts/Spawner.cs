@@ -91,17 +91,20 @@ public class Spawner : MonoBehaviour
 
     Vector3 GetSpawnPosition()
     {
-        // random position
+        // positions are even integers
+        float x = Mathf.Round(Random.Range(spawnLeftPosition, spawnRightPosition));
+        float z = Mathf.Round(startPosition.position.z);
+
+        // adjust to nearest even number
+        // since player moves at 2 units
+        x = Mathf.Round(x / 2) * 2;
+        z = Mathf.Round(z / 2) * 2;
+
+
         if (useSpawnPlacement)
         {
-            // used int to get rid of decimal spawning - uneven spawning
-            int x = (int)Random.Range(spawnLeftPosition, spawnRightPosition);
-
-            Vector3 position = new Vector3(x, startPosition.position.y, startPosition.position.z);
-
-            return position;
+            return new Vector3(x, startPosition.position.y, z);
         }
-        // actual starting position
         else
         {
             return startPosition.position;
