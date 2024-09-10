@@ -447,16 +447,9 @@ MonoBehaviour:
   goBoth: 0
   items:
   - {fileID: 3960278315547406958, guid: 3bff1fcad2f157e4db29e6ed061df872, type: 3}
-  - {fileID: 8059998128076601242, guid: e260e293b1efb414d8ea8c674babf433, type: 3}
   - {fileID: 7729894406828167426, guid: 6acead866dc547546a72415597be997f, type: 3}
-  - {fileID: 802076321598800409, guid: 08b61ba75344b4c49a8f4c9d5d973463, type: 3}
-  - {fileID: 374688252397040402, guid: 3cfa8dba8a346694f8924d54c630870c, type: 3}
-  - {fileID: 1203054502744892292, guid: 7cefe2f32d851a443b0751a3da948ff2, type: 3}
-  - {fileID: 5864876191289172864, guid: 40dc0c4be84ea184d866f073bc1cfdcf, type: 3}
-  - {fileID: 655719818145175585, guid: ca9b916ec6f1dfe4d8e4a56a5cd68e98, type: 3}
   - {fileID: 2159467534901125357, guid: eb742922dbc3593418c259fcdc06e885, type: 3}
   - {fileID: 1910796991447641052, guid: e5c8582e1cecba7419e8a7ca057c8ba2, type: 3}
-  - {fileID: 4276485311116899344, guid: 6529fbe1833f90c4ba1917ff1814d64e, type: 3}
   - {fileID: 6930578105492110903, guid: 7671d8971d70dd848926d1c63c1c7121, type: 3}
   spawnerLeft:
   - {fileID: 1552627703298956365}
