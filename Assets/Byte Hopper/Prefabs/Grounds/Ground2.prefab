@@ -701,14 +701,6 @@ PrefabInstance:
       value: Bus2
       objectReference: {fileID: 0}
     - target: {fileID: 2296897802654354307, guid: 6d52187b26650e4419c42f6663f496b7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.279275
-      objectReference: {fileID: 0}
-    - target: {fileID: 2296897802654354307, guid: 6d52187b26650e4419c42f6663f496b7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.011111112
-      objectReference: {fileID: 0}
-    - target: {fileID: 2296897802654354307, guid: 6d52187b26650e4419c42f6663f496b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.52144444
       objectReference: {fileID: 0}
