@@ -163,6 +163,8 @@ MonoBehaviour:
   goBoth: 1
   items:
   - {fileID: 3960278315547406958, guid: 3bff1fcad2f157e4db29e6ed061df872, type: 3}
+  - {fileID: 2159467534901125357, guid: eb742922dbc3593418c259fcdc06e885, type: 3}
+  - {fileID: 7729894406828167426, guid: 6acead866dc547546a72415597be997f, type: 3}
   spawnerLeft:
   - {fileID: 8705729487475456689}
   spawnerRight:
