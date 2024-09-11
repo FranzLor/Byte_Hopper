@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class CharacterSelection : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] characterList;
+
     void Start()
     {
-        
-    }
+        // use child count to get the number of characters - more dynamic
+        characterList = new GameObject[transform.childCount];
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // fill the array with the characters obj
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            characterList[i] = transform.GetChild(i).gameObject;
+        }
+
+        // disable character renderers
+        foreach (GameObject go in characterList)
+        {
+            go.SetActive(false);
+        }
+
+        // toggle default skin
+        if (characterList[0])
+        {
+            characterList[0].SetActive(true);
+        }
     }
 }
