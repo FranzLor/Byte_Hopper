@@ -841,14 +841,6 @@ PrefabInstance:
       value: Slot2
       objectReference: {fileID: 0}
     - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.099156804
-      objectReference: {fileID: 0}
-    - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.011111112
-      objectReference: {fileID: 0}
-    - target: {fileID: 6777330954887122925, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.49999997
       objectReference: {fileID: 0}
@@ -946,6 +938,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1290783690729772036, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290783690729772036, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8258638837599465394, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
       propertyPath: m_Name
       value: LP (1)
@@ -1012,6 +1012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_resistor_18
       objectReference: {fileID: 0}
+    - target: {fileID: 8034844793399297021, guid: b25eb7fa36669eb47b931278c43b4b7c, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1074,6 +1078,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7901875587441123110, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
+      propertyPath: outlineLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7901875587441123110, guid: 35b0c492bde2b6341aa7b2fa5e235762, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1092,6 +1104,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5346874079526694289}
     m_Modifications:
+    - target: {fileID: 7416212370605475052, guid: bbed3ae628b9b944eb9b080c2a3d7004, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7471831670379114301, guid: bbed3ae628b9b944eb9b080c2a3d7004, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2749111
@@ -1192,6 +1208,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 905907308779355991, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290783690729772036, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290783690729772036, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8258638837599465394, guid: be7a2e40c976250428dd41db926ee9a1, type: 3}

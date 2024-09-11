@@ -34,7 +34,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1571786774632659686}
-  - {fileID: 8361059546862738682}
   - {fileID: 7990509037602644826}
   - {fileID: 3139566354637276651}
   - {fileID: 6477916648610197354}
@@ -427,6 +426,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5391827125199777238, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
       propertyPath: m_Name
       value: WaterTank1 (1)
@@ -489,6 +496,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5391827125199777238, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
       propertyPath: m_Name
       value: WaterTank1
@@ -630,14 +645,6 @@ PrefabInstance:
       value: WatercoolerBig
       objectReference: {fileID: 0}
     - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05207678
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.004028086
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.06666666
       objectReference: {fileID: 0}
@@ -686,84 +693,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
   m_PrefabInstance: {fileID: 2476076538998510098}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3013975200764371282
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 7341715472109767999}
-    m_Modifications:
-    - target: {fileID: 6237601544753227538, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_Name
-      value: Watercool Pipe1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6237601544753227538, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05087234
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.38540763
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.00333463
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0358
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.495
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
---- !u!4 &8361059546862738682 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6763202821639765416, guid: 08707d3d054adb044b81f0a8dca64ce8, type: 3}
-  m_PrefabInstance: {fileID: 3013975200764371282}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3170747180891085501
 PrefabInstance:
@@ -847,6 +776,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5391827125199777238, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
       propertyPath: m_Name
       value: WaterTank1 (3)
@@ -996,14 +933,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
     - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.005081959
-      objectReference: {fileID: 0}
-    - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.09063194
-      objectReference: {fileID: 0}
-    - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28655443
       objectReference: {fileID: 0}
@@ -1065,6 +994,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1125988437453601070, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5391827125199777238, guid: 392caf2ff4154e54790dc0acb32b7718, type: 3}
       propertyPath: m_Name
       value: WaterTank1 (2)
@@ -1216,14 +1153,6 @@ PrefabInstance:
     - target: {fileID: 6389810590396144292, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
       propertyPath: m_Name
       value: WatercoolerBig (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05207678
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.004028086
       objectReference: {fileID: 0}
     - target: {fileID: 6892387163735923512, guid: 0fff51dda080b6e47b56c33612fc5d4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1423,14 +1352,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7341715472109767999}
     m_Modifications:
-    - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.005081959
-      objectReference: {fileID: 0}
-    - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.09063194
-      objectReference: {fileID: 0}
     - target: {fileID: 852554035098416363, guid: db3ef2e30f6aea3498b9539e6b06ad26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.31688887

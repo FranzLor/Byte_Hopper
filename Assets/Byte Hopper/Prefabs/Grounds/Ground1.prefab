@@ -499,6 +499,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bus1
       objectReference: {fileID: 0}
+    - target: {fileID: 7661724364293098526, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661724364293098526, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -560,6 +568,14 @@ PrefabInstance:
     - target: {fileID: 4432430362471726187, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
       propertyPath: m_Name
       value: Bus1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661724364293098526, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661724364293098526, guid: 09107fdcd7e3ecc479fab87eb6668338, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -674,6 +674,18 @@ PrefabInstance:
       propertyPath: audioTrain
       value: 
       objectReference: {fileID: 8300000, guid: dad8cece86155eb47992e6e7a9f724c6, type: 3}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[2].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.5
@@ -744,6 +756,18 @@ PrefabInstance:
       propertyPath: audioTrain
       value: 
       objectReference: {fileID: 8300000, guid: dad8cece86155eb47992e6e7a9f724c6, type: 3}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[2].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.6
@@ -946,6 +970,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 2232554359134559963, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.174
@@ -1008,6 +1036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 2232554359134559963, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0044576675
@@ -1082,6 +1114,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 3590340449038651217, guid: 74cf807d1b258164d84a494648d52cfc, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6418916553197616805, guid: 74cf807d1b258164d84a494648d52cfc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.5023333
@@ -1144,6 +1180,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575998739826871557, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: outlineTargets.Array.data[2].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6933702289714103661, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_Name
       value: Train Light

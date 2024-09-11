@@ -731,6 +731,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4937936386227344190, guid: 6d52187b26650e4419c42f6663f496b7, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937936386227344190, guid: 6d52187b26650e4419c42f6663f496b7, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -932,6 +940,14 @@ PrefabInstance:
     - target: {fileID: 2114840046918653187, guid: 6f03f392c2c4bd3438039f89226c8b17, type: 3}
       propertyPath: m_Name
       value: Bus2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589741164347876753, guid: 6f03f392c2c4bd3438039f89226c8b17, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589741164347876753, guid: 6f03f392c2c4bd3438039f89226c8b17, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
