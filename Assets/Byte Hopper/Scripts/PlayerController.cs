@@ -218,6 +218,8 @@ public class PlayerController : MonoBehaviour
 
     void CanMove()
     {
+        if (isDead) return;
+
         if (isMoving)
         {
             if (Input.GetKeyDown(KeyCode.W))
