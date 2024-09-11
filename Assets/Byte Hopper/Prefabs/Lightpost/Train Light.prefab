@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 8845524472602665979}
   - component: {fileID: 6766864212772400737}
   - component: {fileID: 6575460840218706979}
+  - component: {fileID: 7413353127749787886}
   m_Layer: 0
   m_Name: Audio Trigger
   m_TagString: Untagged
@@ -339,6 +340,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioTrain: {fileID: 8300000, guid: 10ffc118f77c76b40b47931c4b2e7d61, type: 3}
   trafficLight: {fileID: 2923580446725226818}
+--- !u!114 &7413353127749787886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599813869183906673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5647396817344208873
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +366,7 @@ GameObject:
   - component: {fileID: 7857066691029474757}
   - component: {fileID: 5761786441528984494}
   - component: {fileID: 2923580446725226818}
+  - component: {fileID: 5337325893939583487}
   m_Layer: 0
   m_Name: Light Trigger
   m_TagString: Untagged
@@ -486,6 +500,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 23524511216319159}
+--- !u!114 &5337325893939583487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647396817344208873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6933702289714103661
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +524,8 @@ GameObject:
   - component: {fileID: 6691643464079609970}
   - component: {fileID: 8879278838695552184}
   - component: {fileID: 3568189717579415547}
+  - component: {fileID: 3575998739826871557}
+  - component: {fileID: 8474009159064183035}
   m_Layer: 0
   m_Name: Train Light
   m_TagString: collider
@@ -592,6 +620,139 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.099999, y: 10, z: 1}
   m_Center: {x: 2.6676245, y: 3.274156, z: -0.22710831}
+--- !u!114 &3575998739826871557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933702289714103661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe91dc294731a9428c0941ea7579110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  complexMaskingMode: 0
+  drawingMode: 1
+  outlineLayer: 4
+  outlineTargets:
+  - IsVisible: 1
+    CutoutMask: 8
+    edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 8879278838695552184}
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  - IsVisible: 1
+    CutoutMask: 8
+    edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 5784346366374288483}
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  - IsVisible: 1
+    CutoutMask: 8
+    edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 814475351123375378}
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  - IsVisible: 0
+    CutoutMask: 8
+    edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 8444864538293044758}
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  - IsVisible: 0
+    CutoutMask: 8
+    edgeDilateAmount: 5
+    frontEdgeDilateAmount: 5
+    backEdgeDilateAmount: 5
+    renderer: {fileID: 7074206650135239413}
+    SubmeshIndex: 0
+    BoundsMode: 0
+    Bounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    CutoutThreshold: 0.5
+    CullMode: 2
+    cutoutTextureName: 
+    DilateRenderingMode: 0
+    cutoutTextureIndex: 0
+  renderStyle: 2
+  outlineParameters:
+    enabled: 1
+    color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 0}
+      serializedProperties: []
+  backParameters:
+    enabled: 0
+    color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 0}
+      serializedProperties: []
+  frontParameters:
+    enabled: 1
+    color: {r: 0, g: 0, b: 0, a: 1}
+    dilateShift: 1
+    blurShift: 1
+    fillPass:
+      shader: {fileID: 0}
+      serializedProperties: []
+--- !u!114 &8474009159064183035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6933702289714103661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5697241718199451056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -668,10 +829,60 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1089211039809018556, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3139392350285546587}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 312568099921477638, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7457990125000391505}
+    - targetCorrespondingSourceObject: {fileID: 4059876197060480333, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1438476310163930792}
   m_SourcePrefab: {fileID: 100100000, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+--- !u!23 &814475351123375378 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4926148733899720866, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+  m_PrefabInstance: {fileID: 5697241718199451056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4615358950803531532 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1089211039809018556, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
   m_PrefabInstance: {fileID: 5697241718199451056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5424264898574040502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 312568099921477638, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+  m_PrefabInstance: {fileID: 5697241718199451056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7457990125000391505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5424264898574040502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &5784346366374288483 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2258145609970082259, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+  m_PrefabInstance: {fileID: 5697241718199451056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8594900864044036349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4059876197060480333, guid: bf6d5b722a514c14eb3be163a07071a6, type: 3}
+  m_PrefabInstance: {fileID: 5697241718199451056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1438476310163930792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594900864044036349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

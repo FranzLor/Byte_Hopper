@@ -381,20 +381,8 @@ PrefabInstance:
       value: WatercoolCombo (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08445224
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4756694
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0029521037
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.28716
+      value: 0.2872
       objectReference: {fileID: 0}
     - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_LocalPosition.y
@@ -520,6 +508,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1077689572991485607}
     m_Modifications:
+    - target: {fileID: 135218299595953425, guid: c382aef824f256045905b62afa602ed1, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135218299595953425, guid: c382aef824f256045905b62afa602ed1, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2796866767118575211, guid: c382aef824f256045905b62afa602ed1, type: 3}
       propertyPath: m_Name
       value: WaterTank1
@@ -585,18 +581,6 @@ PrefabInstance:
     - target: {fileID: 1123632685358504778, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_Name
       value: WatercoolCombo (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08445224
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4756694
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0029521037
       objectReference: {fileID: 0}
     - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_LocalPosition.x
@@ -952,6 +936,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1077689572991485607}
     m_Modifications:
+    - target: {fileID: 135218299595953425, guid: c382aef824f256045905b62afa602ed1, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 135218299595953425, guid: c382aef824f256045905b62afa602ed1, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2796866767118575211, guid: c382aef824f256045905b62afa602ed1, type: 3}
       propertyPath: m_Name
       value: WaterTank1
@@ -1019,18 +1011,6 @@ PrefabInstance:
       value: WatercoolCombo
       objectReference: {fileID: 0}
     - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.08445224
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4756694
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0029521037
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.036999993
       objectReference: {fileID: 0}
@@ -1069,6 +1049,22 @@ PrefabInstance:
     - target: {fileID: 5516442739866470399, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995860152619901478, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995860152619901478, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
+      propertyPath: outlineTargets.Array.data[1].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995860152619901478, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
+      propertyPath: outlineTargets.Array.data[2].IsVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995860152619901478, guid: a676b36523b46bc4aac53e2a6cceba20, type: 3}
+      propertyPath: outlineTargets.Array.data[3].IsVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

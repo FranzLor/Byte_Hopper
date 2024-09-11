@@ -534,6 +534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ZoneSlot1
       objectReference: {fileID: 0}
+    - target: {fileID: 5235531333251222129, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6679005912075140980, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5000222
@@ -595,6 +599,10 @@ PrefabInstance:
     - target: {fileID: 188460228575821234, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
       propertyPath: m_Name
       value: ZoneSlot1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235531333251222129, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
+      propertyPath: outlineTargets.Array.data[0].IsVisible
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6679005912075140980, guid: 0b7f8ad6c38f44e4c8137139f285b998, type: 3}
       propertyPath: m_LocalPosition.x
