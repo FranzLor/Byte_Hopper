@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveDistance = 2.5f;
+    public float moveDistance = 2.0f;
     public float moveTime = 0.24f;
     public float colliderDistanceCheck = 2.0f;
 

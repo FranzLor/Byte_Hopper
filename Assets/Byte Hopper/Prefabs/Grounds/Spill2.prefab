@@ -301,7 +301,6 @@ MonoBehaviour:
   items:
   - {fileID: 4146239715613590543, guid: d5d6f4e20e10dd14790578f45198aab8, type: 3}
   - {fileID: 4146239715613590543, guid: efc9f7576cecea24d8e203b0745c26a8, type: 3}
-  - {fileID: 4146239715613590543, guid: 08b43657251aea541beb83350487e648, type: 3}
   spawnerLeft:
   - {fileID: 3184393625392017988}
   - {fileID: 332665303232703159}
