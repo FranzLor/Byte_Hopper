@@ -14,9 +14,11 @@ public class AnimatorController : MonoBehaviour
 
     void Update()
     {
+
         if (playerController.isDead)
         {
             animator.SetBool("Dead", true);
+            return;
         }
 
         if (playerController.isJumping)

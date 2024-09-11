@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     public float moveTime = 0.24f;
     public float colliderDistanceCheck = 2.0f;
 
+    // distance tracking
+    private HashSet<Vector3> visitedPositions = new HashSet<Vector3>();
+
     public bool isIdle = true;
     public bool isMoving = false;
     public bool isDead = false;
@@ -215,6 +218,8 @@ public class PlayerController : MonoBehaviour
 
     void CanMove()
     {
+        if (isDead) return;
+
         if (isMoving)
         {
             if (Input.GetKeyDown(KeyCode.W))
@@ -266,7 +271,18 @@ public class PlayerController : MonoBehaviour
 
     void SetMoveForwardState()
     {
-        Manager.instance.UpdateDistanceCount();
+        // store current position
+        Vector3 currentPosition = transform.position;
+
+        // fixes issue with counting 1 distance every forward movement
+        // check if position has been visited
+        if (!visitedPositions.Contains(currentPosition))
+        {
+            visitedPositions.Add(currentPosition);
+            Manager.instance.UpdateDistanceCount();
+        }
+
+
     }
 
     void IsVisible()
