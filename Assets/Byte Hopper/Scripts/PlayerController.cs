@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
     public bool isJumping = false;
 
-    public ParticleSystem particle = null;
+    public ParticleSystem mainParticle = null;
+    public ParticleSystem deathParticle = null;
 
     public ParticleSystem splashParticle = null;
     public bool parentedToObject = false;
@@ -289,12 +290,15 @@ public class PlayerController : MonoBehaviour
         isDead = true;
 
         // play death particle
-        ParticleSystem.EmissionModule em = particle.emission;
+        ParticleSystem.EmissionModule em = deathParticle.emission;
         em.enabled = true;
 
         PlayAudioClip(audioHit);
 
         ghost.SetActive(false);
+        // hide main particle
+        ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
+        emissionModule.enabled = false;
 
         Manager.instance.GameOver();
     }
@@ -311,6 +315,9 @@ public class PlayerController : MonoBehaviour
 
         // hides player - fish in the water
         ghost.SetActive(false);
+        // hide main particle
+        ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
+        emissionModule.enabled = false;
 
         Manager.instance.GameOver();
     }
@@ -324,6 +331,9 @@ public class PlayerController : MonoBehaviour
         PlayAudioClip(audioElectrified);
 
         ghost.SetActive(false);
+        ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
+        emissionModule.enabled = false;
+
         Manager.instance.GameOver();
     }
 

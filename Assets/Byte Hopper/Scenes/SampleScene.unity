@@ -1021,6 +1021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spill1
       objectReference: {fileID: 0}
+    - target: {fileID: 5017515226187862179, guid: cdac1b8d0279e8a4b9f426c38f1e6b20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1245,6 +1249,10 @@ PrefabInstance:
     - target: {fileID: 532193244567969794, guid: a513bdc4c8781264b852800aa0285a16, type: 3}
       propertyPath: m_Name
       value: Spill2
+      objectReference: {fileID: 0}
+    - target: {fileID: 532193244567969794, guid: a513bdc4c8781264b852800aa0285a16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7341715472109767999, guid: a513bdc4c8781264b852800aa0285a16, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2308,6 +2316,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047143894}
   m_CullTransparentMesh: 1
+--- !u!198 &1066061941 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3028168468016419353, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
+  m_PrefabInstance: {fileID: 1098739258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1098739258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2360,10 +2373,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5084514925030696080, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
+      propertyPath: m_Name
+      value: Death
+      objectReference: {fileID: 0}
     - target: {fileID: 6154289907568295679, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
       propertyPath: outlineTargets.Array.data[0].IsVisible
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7576238670007916787, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
+      propertyPath: mainParticle
+      value: 
+      objectReference: {fileID: 1164237634}
+    - target: {fileID: 7576238670007916787, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
+      propertyPath: deathParticle
+      value: 
+      objectReference: {fileID: 1066061941}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2522,6 +2547,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4851406449020320110, guid: 6dde933cb6143ce45a5d732952e47b25, type: 3}
   m_PrefabInstance: {fileID: 946551351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1164237634 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19888810, guid: 9b1da3797b2d26b418d0f074fc6fab68, type: 3}
+  m_PrefabInstance: {fileID: 1098739258}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1183621193
 GameObject:
@@ -3672,7 +3702,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1475228153
 Transform:
   m_ObjectHideFlags: 0
