@@ -670,6 +670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 2923580446725226818, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: audioTrain
+      value: 
+      objectReference: {fileID: 8300000, guid: dad8cece86155eb47992e6e7a9f724c6, type: 3}
     - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.5
@@ -736,6 +740,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
+    - target: {fileID: 2923580446725226818, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
+      propertyPath: audioTrain
+      value: 
+      objectReference: {fileID: 8300000, guid: dad8cece86155eb47992e6e7a9f724c6, type: 3}
     - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.6
@@ -939,18 +947,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
     - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0044576675
-      objectReference: {fileID: 0}
-    - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.23609643
-      objectReference: {fileID: 0}
-    - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0998169
-      objectReference: {fileID: 0}
-    - target: {fileID: 5061816499450059052, guid: 4460e487c6b3a4b41b6c34b72987a9c6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.174
       objectReference: {fileID: 0}
@@ -1148,18 +1144,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8298727680688396087}
     m_Modifications:
-    - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757341710615106825, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.12
-      objectReference: {fileID: 0}
     - target: {fileID: 6933702289714103661, guid: 98ef318880867b744bb2b0c9515b2fdf, type: 3}
       propertyPath: m_Name
       value: Train Light
