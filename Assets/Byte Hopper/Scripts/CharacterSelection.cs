@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterSelection : MonoBehaviour
 {
     public GameObject[] characterList;
+    private int index = 0;
+
 
     void Start()
     {
+        index = PlayerPrefs.GetInt("CharacterSelected");
+
         // use child count to get the number of characters - more dynamic
         characterList = new GameObject[transform.childCount];
 
@@ -23,10 +28,52 @@ public class CharacterSelection : MonoBehaviour
             go.SetActive(false);
         }
 
-        // toggle default skin
-        if (characterList[0])
+        // toggle selected character
+        if (characterList[index])
         {
-            characterList[0].SetActive(true);
+            characterList[index].SetActive(true);
         }
     }
+
+    public void ToggleLeft()
+    {
+        // toggle off current character
+        characterList[index].SetActive(false);
+
+        index--;
+
+        if (index < 0)
+        {
+            index = characterList.Length - 1;
+        }
+
+        // toggle on new character
+        characterList[index].SetActive(true);
+    }
+
+    public void ToggleRight()
+    {
+        // toggle off current character
+        characterList[index].SetActive(false);
+
+        index++;
+
+        if (index == characterList.Length)
+        {
+            index = 0;
+        }
+
+        // toggle on new character
+        characterList[index].SetActive(true);
+    }
+
+
+    public void ConfirmButton()
+    {
+        // save the selected character
+        PlayerPrefs.SetInt("CharacterSelected", index);
+
+        SceneManager.LoadScene("ByteRunner");
+    }
+
 }
