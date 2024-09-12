@@ -76,4 +76,9 @@ public class CharacterSelection : MonoBehaviour
         SceneManager.LoadScene("ByteRunner");
     }
 
+    public void CharacterSelectionButton()
+    {
+        SceneManager.LoadScene("CharacterSelect");
+    }
+
 }
