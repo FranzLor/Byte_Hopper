@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FX-Mist Red
+  m_Name: FX-Mist Orange
   m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 2100000, guid: 53fea9cd3c9a9364cbcd083404655c43, type: 2}
   m_ModifiedSerializedProperties: 0
@@ -25,5 +25,6 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - _TintColor: {r: 1, g: 0.39263535, b: 0, a: 1}
   m_BuildTextureStacks: []
