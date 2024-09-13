@@ -7735,13 +7735,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
   - name: CPU
     clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
-  - name: Electric
+  - name: Electrified
     clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
   - name: Glitch1
     clip: {fileID: 8300000, guid: 7e8f00f64ea0cc644ba1776d9b43299c, type: 3}
   - name: Glitch2
     clip: {fileID: 8300000, guid: 90edf041af1ae284d8b57637baaad334, type: 3}
-  - name: Impact
+  - name: Hit
     clip: {fileID: 8300000, guid: f303a53041a52f6409df0f5901bfeada, type: 3}
   - name: Jump
     clip: {fileID: 8300000, guid: 3ae19417b975fae43a2d07e46b34fbf5, type: 3}

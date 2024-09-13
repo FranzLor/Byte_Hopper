@@ -31,17 +31,6 @@ public class PlayerController : MonoBehaviour
     public float angleCheck = 0.25f;
     public float angleCheckDistance = 0.5f;
 
-    public AudioClip audioIdle1 = null;
-    public AudioClip audioIdle2 = null;
-    public AudioClip audioJump = null;
-    public AudioClip audioHit = null;
-    public AudioClip audioSplash = null;
-    public AudioClip audioElectrified = null;
-
-    // timers for idling
-    private float idleTimer = 0.0f;
-    private float idleThreshold = 3.0f;
-
     void Start()
     {
         renderer = ghost.GetComponent<Renderer>();
@@ -58,9 +47,6 @@ public class PlayerController : MonoBehaviour
             CanMove();
 
             IsVisible();
-
-            // handling idling audio
-            HandleIdleAudio();
         }
     }
 
@@ -81,53 +67,10 @@ public class PlayerController : MonoBehaviour
                 {
                     CheckIfCanMoveSingleRay();
                 }
-
-                // reset timer when moving
-                idleTimer = 0.0f;
             }
         }
     }
 
-    void HandleIdleAudio()
-    {
-        if (isIdle)
-        {
-            idleTimer += Time.deltaTime;
-
-            // if player has been idle for too long
-            if (idleTimer >= idleThreshold)
-            {
-                PlayRandomIdleAudio();
-
-                // reset timer
-                idleTimer = 0.0f;
-            }
-        }
-    }
-
-    void PlayRandomIdleAudio()
-    {
-        AudioClip randomIdleClip = null;
-
-        int randomClip = Random.Range(0, 2);
-
-        if (randomClip == 0)
-        {
-            randomIdleClip = audioIdle1;
-        }
-        else
-        {
-            randomIdleClip = audioIdle2;
-        }
-
-        if (randomIdleClip != null)
-        {
-            PlayAudioClip(randomIdleClip);
-        }
-
-        idleTimer = 0.0f;
-
-    }
 
     void CheckIfCanMoveSingleRay()
     {
@@ -254,7 +197,7 @@ public class PlayerController : MonoBehaviour
         
         isJumping = true;
 
-        PlayAudioClip(audioJump);
+        AudioManager.instance.PlaySFX("Jump");
 
         LeanTween.move(this.gameObject, position, moveTime).setOnComplete(MoveComplete);
     }
@@ -264,8 +207,6 @@ public class PlayerController : MonoBehaviour
         // called when tween is complete, resets states and locks
         isJumping = false;
         isIdle = true;
-
-        //PlayAudioClip(audioIdle2);
 
     }
 
@@ -309,7 +250,7 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule em = deathParticle.emission;
         em.enabled = true;
 
-        PlayAudioClip(audioHit);
+        AudioManager.instance.PlaySFX("Hit");
 
         ghost.SetActive(false);
         // hide main particle
@@ -327,7 +268,7 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule em = splashParticle.emission;
         em.enabled = true;
 
-        PlayAudioClip(audioSplash);
+        AudioManager.instance.PlaySFX("Splash");
 
         // hides player - fish in the water
         ghost.SetActive(false);
@@ -344,7 +285,7 @@ public class PlayerController : MonoBehaviour
 
         // play death particle
 
-        PlayAudioClip(audioElectrified);
+        AudioManager.instance.PlaySFX("Electrified");
 
         ghost.SetActive(false);
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
@@ -353,8 +294,8 @@ public class PlayerController : MonoBehaviour
         Manager.instance.GameOver();
     }
 
-    public void PlayAudioClip(AudioClip clip)
-    {
-        this.GetComponent<AudioSource>().PlayOneShot(clip);
-    }
+    //public void PlayAudioClip(AudioClip clip)
+    //{
+    //    this.GetComponent<AudioSource>().PlayOneShot(clip);
+    //}
 }
