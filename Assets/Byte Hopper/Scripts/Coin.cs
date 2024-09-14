@@ -9,8 +9,6 @@ public class Coin : MonoBehaviour
     // used to make sure audio plays first before audio is destroyed
     public GameObject coin = null;
 
-    public AudioClip audioClip = null;
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") 
@@ -22,7 +20,7 @@ public class Coin : MonoBehaviour
             // disable coin obj
             coin.SetActive(false);
 
-            this.GetComponent<AudioSource>().PlayOneShot(audioClip);
+            AudioManager.instance.PlaySFX("Coin");
 
             // destroy coin after audio is done playing
             Destroy(this.gameObject, 0.45f);

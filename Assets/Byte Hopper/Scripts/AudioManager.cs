@@ -61,4 +61,23 @@ public class AudioManager : MonoBehaviour
             sfxSource.Play();
         }
     }
+
+    public void StopMusic(string name)
+    {
+        Sound s = System.Array.Find(musicSounds, sound => sound.name == name);
+
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + " not found!");
+            return;
+        }
+
+        // Check if the currently playing clip is the one you want to stop
+        if (musicSource.clip == s.clip && musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+    }
+
+
 }

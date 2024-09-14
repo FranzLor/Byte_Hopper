@@ -1979,7 +1979,7 @@ MonoBehaviour:
   distanceCounter: {fileID: 1183621194}
   camera: {fileID: 1113779718}
   levelGenerator: {fileID: 1581953582}
-  levelCount: 20
+  levelCount: 10
   guiGameOver: {fileID: 14536607}
 --- !u!82 &477956619
 AudioSource:
@@ -7733,14 +7733,10 @@ MonoBehaviour:
   sfxSounds:
   - name: UI
     clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
-  - name: CPU
-    clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
+  - name: Coin
+    clip: {fileID: 8300000, guid: 7c43da0cbe2143840a32fd22dce61822, type: 3}
   - name: Electrified
-    clip: {fileID: 8300000, guid: c334c71593279c04dbc608acf76247f4, type: 3}
-  - name: Glitch1
-    clip: {fileID: 8300000, guid: 7e8f00f64ea0cc644ba1776d9b43299c, type: 3}
-  - name: Glitch2
-    clip: {fileID: 8300000, guid: 90edf041af1ae284d8b57637baaad334, type: 3}
+    clip: {fileID: 8300000, guid: 9d72cb384c2452b489e0329aeb34290c, type: 3}
   - name: Hit
     clip: {fileID: 8300000, guid: f303a53041a52f6409df0f5901bfeada, type: 3}
   - name: Jump
