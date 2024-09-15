@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class TrainAudio : MonoBehaviour
 {
-    public AudioClip audioTrain = null;
-    private AudioSource audioSource = null;
+    public string trainAlarmSoundName = "Train";
     private bool playerInTrigger = false;
-    private bool audioPlayedForCurrentTrain = false;
+    private bool isAlarmPlaying = false;
+
+    // store the duration of the train alarm sound
+    private float audioClipLength = 0.0f; 
+    private Coroutine trainAudioCoroutine;
 
     public TrafficLight trafficLight = null;
 
     void Start()
     {
-        audioSource = this.GetComponent<AudioSource>();
-
+        // get the duration of the train alarm sound from AudioManager
+        Sound trainAlarm = System.Array.Find(AudioManager.instance.sfxSounds, sound => sound.name == trainAlarmSoundName);
+        if (trainAlarm != null)
+        {
+            audioClipLength = trainAlarm.clip.length;
+        }
+        else
+        {
+            Debug.LogWarning("Train alarm sound not found in AudioManager!");
+        }
     }
 
     void Update()
@@ -24,56 +35,63 @@ public class TrainAudio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerInTrigger = true;
-
-            // player in area, play train audio, only if the light is active
-            if (playerInTrigger && trafficLight.light.activeSelf && audioTrain != null)
-            {
-                PlayTrainAudio();
-            }
+            CheckTrainStatus();
         }
-
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerInTrigger = false;
-
-            // player leaves, stop audio, unhear the train
-            if (audioSource.isPlaying)
-            {
-                audioSource.Stop();
-            }
+            StopTrainAudio();
         }
     }
 
     void PlayTrainAudio()
     {
-        if (audioSource != null && audioTrain != null)
+        if (!isAlarmPlaying && playerInTrigger && trafficLight.light.activeSelf && AudioManager.instance != null)
         {
-            audioSource.clip = audioTrain;
-            audioSource.Play();
+            AudioManager.instance.PlaySFX(trainAlarmSoundName);
+            isAlarmPlaying = true;
 
-            // mark audio has been plaeyd for current train
-            audioPlayedForCurrentTrain = true;
+            // start coroutine to reset after the clip finishes playing
+            if (trainAudioCoroutine != null)
+            {
+                StopCoroutine(trainAudioCoroutine);
+            }
+            trainAudioCoroutine = StartCoroutine(ResetTrainAudioAfterDelay(audioClipLength));
         }
     }
 
-    public void CheckTrainStatus()
+    void StopTrainAudio()
     {
-        // if the player is in the trigger, the light is active (train is there), and the audio hasn't been played for the current train
-        if (playerInTrigger && trafficLight.light.activeSelf && !audioSource.isPlaying)
+        // stop the train audio if the player leaves the trigger or the train passes
+        if (playerInTrigger == false && isAlarmPlaying)
+        {
+            AudioManager.instance.StopSFX(trainAlarmSoundName);
+            isAlarmPlaying = false;
+        }
+    }
+
+    IEnumerator ResetTrainAudioAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isAlarmPlaying = false;
+    }
+
+    void CheckTrainStatus()
+    {
+        if (playerInTrigger && trafficLight.light.activeSelf)
         {
             PlayTrainAudio();
         }
         else if (!trafficLight.light.activeSelf)
         {
-            // reset audio trigger when the train leaves
-            audioPlayedForCurrentTrain = false;
+            StopTrainAudio();
         }
     }
 }

@@ -889,7 +889,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 8765019338248170257, guid: f0ae8bb1bb62d214ea6c0a12c9f2859a, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -2422,7 +2422,7 @@ RectTransform:
   m_Father: {fileID: 1471160698}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3013,8 +3013,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 411745025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10, y: 1}
   m_SizeDelta: {x: 56.421, y: -8.716}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5263,7 +5263,7 @@ RectTransform:
   m_Father: {fileID: 1277833387}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5614,7 +5614,7 @@ RectTransform:
   m_Father: {fileID: 1258718862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5855,8 +5855,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 951742054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10, y: 1}
   m_SizeDelta: {x: 56.421, y: -8.716}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6249,6 +6249,8 @@ MonoBehaviour:
   audioMixer: {fileID: 24100000, guid: f0ae8bb1bb62d214ea6c0a12c9f2859a, type: 2}
   startScreen: {fileID: 1803514025}
   settingsPanel: {fileID: 1424699518}
+  musicSlider: {fileID: 197886553}
+  sfxSlider: {fileID: 1085260559}
 --- !u!1 &1411513318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6536435598530641768, guid: ea02d2a653616d342b3d4be80ed750cb, type: 3}
@@ -6385,7 +6387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1424699519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7627,8 +7629,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1605496996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10, y: 1}
   m_SizeDelta: {x: 56.421, y: -8.716}
   m_Pivot: {x: 0.5, y: 0.5}
