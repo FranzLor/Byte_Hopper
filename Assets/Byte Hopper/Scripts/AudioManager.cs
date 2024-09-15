@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        PlayMusic("Theme");
+        PlayMusic("Game");
 
         if (PlayerPrefs.HasKey("Music"))
         {

@@ -76,9 +76,6 @@ public class Manager : MonoBehaviour
     public void StartPlay()
     {
         canPlay = true;
-        AudioManager.instance.StopMusic("Theme");
-
-        AudioManager.instance.PlayMusic("Game");
     }
 
     public void GameOver()
@@ -94,9 +91,6 @@ public class Manager : MonoBehaviour
     {
         Debug.Log("Game Over");
 
-        // stop the main game music from array
-        AudioManager.instance.StopMusic("Game");
-
         guiGameOver.SetActive(true);
     }
 
@@ -105,8 +99,6 @@ public class Manager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
 
         SceneManager.LoadScene(scene.name);
-
-        AudioManager.instance.PlayMusic("Theme");
     }
 
     public void Quit()

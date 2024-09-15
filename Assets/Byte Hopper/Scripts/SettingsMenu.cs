@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class SettingsMenu : MonoBehaviour
 
     public GameObject startScreen;
     public GameObject settingsPanel;
+
+    public Slider musicSlider, sfxSlider;
 
     void Awake()
     {
@@ -20,6 +23,9 @@ public class SettingsMenu : MonoBehaviour
         // load settings before displaying the settings panel
         LoadSettings();
 
+        musicSlider.value = PlayerPrefs.GetFloat("Music", 1);
+        sfxSlider.value = PlayerPrefs.GetFloat("SFX", 1);
+
         // show settings panel
         startScreen.SetActive(false);
         settingsPanel.SetActive(true);
@@ -27,6 +33,10 @@ public class SettingsMenu : MonoBehaviour
 
     public void CloseSettings()
     {
+        PlayerPrefs.SetFloat("Music", musicSlider.value);
+        PlayerPrefs.SetFloat("SFX", sfxSlider.value);
+        PlayerPrefs.Save();
+
         // hide settings panel and return to the start screen
         startScreen.SetActive(true);
         settingsPanel.SetActive(false);
