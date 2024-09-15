@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
@@ -10,40 +11,47 @@ public class SettingsMenu : MonoBehaviour
     public GameObject startScreen;
     public GameObject settingsPanel;
 
+    public Slider musicSlider, sfxSlider;
+
     void Awake()
     {
-        // Load settings when the game starts
         LoadSettings();
     }
 
-    // Call this every time the settings menu is opened
     public void OpenSettings()
     {
-        // Load settings before displaying the settings panel
+        // load settings before displaying the settings panel
         LoadSettings();
 
-        // Show settings panel
+        musicSlider.value = PlayerPrefs.GetFloat("Music", 1);
+        sfxSlider.value = PlayerPrefs.GetFloat("SFX", 1);
+
+        // show settings panel
         startScreen.SetActive(false);
         settingsPanel.SetActive(true);
     }
 
     public void CloseSettings()
     {
-        // Hide settings panel and return to the start screen
+        PlayerPrefs.SetFloat("Music", musicSlider.value);
+        PlayerPrefs.SetFloat("SFX", sfxSlider.value);
+        PlayerPrefs.Save();
+
+        // hide settings panel and return to the start screen
         startScreen.SetActive(true);
         settingsPanel.SetActive(false);
     }
 
     void LoadSettings()
     {
-        // Load saved volume
+        // load saved volume
         if (PlayerPrefs.HasKey("Volume"))
         {
             float savedVolume = PlayerPrefs.GetFloat("Volume");
             audioMixer.SetFloat("Volume", savedVolume);
         }
 
-        // Load saved fullscreen preference
+        // load saved fullscreen preference
         if (PlayerPrefs.HasKey("FullScreen"))
         {
             bool isFullScreen = PlayerPrefs.GetInt("FullScreen") == 1;
@@ -55,7 +63,7 @@ public class SettingsMenu : MonoBehaviour
     {
         audioMixer.SetFloat("Volume", volume);
 
-        // Save the volume
+        // save the volume
         PlayerPrefs.SetFloat("Volume", volume);
         PlayerPrefs.Save();
     }
@@ -64,8 +72,19 @@ public class SettingsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullScreen;
 
-        // Save fullscreen preference
+        // save fullscreen preference
         PlayerPrefs.SetInt("FullScreen", isFullScreen ? 1 : 0);
         PlayerPrefs.Save();
     }
+
+    public void ToggleMusic()
+    {
+        AudioManager.instance.ToggleMusic();
+    }
+
+    public void ToggleSFX()
+    {
+        AudioManager.instance.ToggleSFX();
+    }
+
 }
