@@ -7,9 +7,8 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager instance;
 
     private int currentCoins = 0;
-    private const string CoinsKey = "PlayerCoins";
 
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
         {
@@ -20,51 +19,54 @@ public class CurrencyManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        currentCoins = PlayerPrefs.GetInt("Coins", 0);
     }
 
-    private void Start()
-    {
-        LoadCoins();
-    }
-
-    public void AddCoins(int value)
-    {
-        currentCoins += value;
-        SaveCoins();
-    }
-
-    public bool SpendCoins(int value)
-    {
-        if (currentCoins >= value)
-        {
-            currentCoins -= value;
-            SaveCoins();
-            return true;
-        }
-        else
-        {
-            Debug.Log("Not Enough Coins");
-
-            // todo add a popup or something
-            return false;
-        }
-    }
+    //private void Start()
+    //{
+    //    LoadCoins();
+    //}
 
     public int GetCoinBalance()
     {
         return currentCoins;
     }
 
-    private void SaveCoins()
+    public void AddCoins(int amount)
     {
-        PlayerPrefs.SetInt(CoinsKey, currentCoins);
-        PlayerPrefs.Save();
+        currentCoins += amount;
+        PlayerPrefs.SetInt("Coins", currentCoins);
     }
 
-    private void LoadCoins()
+    public void SpendCoins(int amount)
     {
-        currentCoins = PlayerPrefs.GetInt(CoinsKey, 0);
+        if (currentCoins >= amount)
+        {
+            currentCoins -= amount;
+            PlayerPrefs.SetInt("Coins", currentCoins);
+        }
+        else
+        {
+            Debug.Log("Not enough coins to spend.");
+        }
     }
+
+    //public int GetCoinBalance()
+    //{
+    //    return currentCoins;
+    //}
+
+    //private void SaveCoins()
+    //{
+    //    PlayerPrefs.SetInt(CoinsKey, currentCoins);
+    //    PlayerPrefs.Save();
+    //}
+
+    //private void LoadCoins()
+    //{
+    //    currentCoins = PlayerPrefs.GetInt(CoinsKey, 0);
+    //}
 
 
 }
