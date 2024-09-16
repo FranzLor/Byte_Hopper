@@ -12,7 +12,7 @@ public class Manager : MonoBehaviour
     public Camera camera = null;
 
     public LevelGenerator levelGenerator = null;
-    public int levelCount = 40;
+    public int levelCount = 10;
 
     //private int currentCoins = 0;
     private int currentDistance = 0;
@@ -45,7 +45,20 @@ public class Manager : MonoBehaviour
 
         }
 
-        coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
+        // initialize manager and UI
+        StartCoroutine(InitializeCoinUI());
+    }
+
+    private void UpdateCoinUI()
+    {
+        if (CurrencyManager.instance != null)
+        {
+            coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
+        }
+        else
+        {
+            Debug.LogWarning("CurrencyManager not found in scene");
+        }
     }
 
     public void UpdateCoinCount(int value)
@@ -55,6 +68,13 @@ public class Manager : MonoBehaviour
         //currentCoins += value;
 
         CurrencyManager.instance.AddCoins(value);
+        UpdateCoinUI();
+    }
+
+    IEnumerator InitializeCoinUI()
+    {
+        yield return new WaitUntil(() => CurrencyManager.instance != null);
+
         coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
     }
 
