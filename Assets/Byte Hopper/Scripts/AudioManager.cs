@@ -34,8 +34,6 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        PlayMusic("Game");
-
         if (PlayerPrefs.HasKey("Music"))
         {
             LoadVolumes();
@@ -56,6 +54,9 @@ public class AudioManager : MonoBehaviour
 
         SetMusicVolume();
         SetSFXVolume();
+
+        PlayMusic("Game");
+
     }
 
     public void PlayMusic(string name)
