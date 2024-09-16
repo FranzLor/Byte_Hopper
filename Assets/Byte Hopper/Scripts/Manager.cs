@@ -14,7 +14,7 @@ public class Manager : MonoBehaviour
     public LevelGenerator levelGenerator = null;
     public int levelCount = 40;
 
-    private int currentCoins = 0;
+    //private int currentCoins = 0;
     private int currentDistance = 0;
 
     private bool canPlay = false;
@@ -45,15 +45,17 @@ public class Manager : MonoBehaviour
 
         }
 
+        coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
     }
 
     public void UpdateCoinCount(int value)
     {
         Debug.Log("Coin Collected: " + value);
 
-        currentCoins += value;
+        //currentCoins += value;
 
-        coinCounter.text = currentCoins.ToString();
+        CurrencyManager.instance.AddCoins(value);
+        coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
     }
 
     public void UpdateDistanceCount()
