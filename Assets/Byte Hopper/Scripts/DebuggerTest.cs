@@ -12,6 +12,8 @@ public class DebuggerTest : MonoBehaviour
     public Button resetCoinsButton;
     [SerializeField]
     public Button resetUnlocksButton;
+    [SerializeField]
+    public Button resetHighScoreButton;
 
 #endif
 
@@ -29,6 +31,7 @@ public class DebuggerTest : MonoBehaviour
         addCoinsButton.onClick.AddListener(() => AddCoinsForTesting());
         resetCoinsButton.onClick.AddListener(() => ResetCoinsForTesting());
         resetUnlocksButton.onClick.AddListener(() => ResetUnlocksForTesting());
+        resetHighScoreButton.onClick.AddListener(() => ResetHighScore());
     }
 
     void AddCoinsForTesting()
@@ -84,6 +87,25 @@ public class DebuggerTest : MonoBehaviour
         {
             characterSelection.LoadSkinUnlocks();
             characterSelection.UpdateCharacterSelection();
+        }
+    }
+
+
+    void ResetHighScore()
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
+        PlayerPrefs.Save();
+
+        Debug.Log("High score reset to 0.");
+
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.ResetDistance();
+        }
+
+        if (Manager.instance != null)
+        {
+            Manager.instance.UpdateHighScoreUI();
         }
     }
 }

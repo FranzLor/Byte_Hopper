@@ -104,6 +104,17 @@ public class Manager : MonoBehaviour
         levelGenerator.randomGenerator();
     }
 
+    public void UpdateHighScoreUI()
+    {
+        int highScore = ScoreManager.instance.GetHighScore();
+
+        if (highScoreText != null)
+        {
+            highScoreText.text = "High Score: " + highScore.ToString();  // Update the text
+            highScoreText.gameObject.SetActive(true);  // Ensure the text is visible
+        }
+    }
+
     public void AddDistance(int value)
     {
         ScoreManager.instance.AddDistance(value);
