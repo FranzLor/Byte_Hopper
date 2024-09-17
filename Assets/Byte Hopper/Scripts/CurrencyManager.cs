@@ -19,14 +19,12 @@ public class CurrencyManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        currentCoins = PlayerPrefs.GetInt("Coins", 0);
     }
 
-    //private void Start()
-    //{
-    //    LoadCoins();
-    //}
+    void Start()
+    {
+        currentCoins = PlayerPrefs.GetInt("PlayerCoins", 0);
+    }
 
     public int GetCoinBalance()
     {
@@ -36,7 +34,8 @@ public class CurrencyManager : MonoBehaviour
     public void AddCoins(int amount)
     {
         currentCoins += amount;
-        PlayerPrefs.SetInt("Coins", currentCoins);
+        PlayerPrefs.SetInt("PlayerCoins", currentCoins);
+        PlayerPrefs.Save();
     }
 
     public void SpendCoins(int amount)
@@ -44,7 +43,8 @@ public class CurrencyManager : MonoBehaviour
         if (currentCoins >= amount)
         {
             currentCoins -= amount;
-            PlayerPrefs.SetInt("Coins", currentCoins);
+            PlayerPrefs.SetInt("PlayerCoins", currentCoins);
+            PlayerPrefs.Save();
         }
         else
         {
@@ -52,21 +52,11 @@ public class CurrencyManager : MonoBehaviour
         }
     }
 
-    //public int GetCoinBalance()
-    //{
-    //    return currentCoins;
-    //}
-
-    //private void SaveCoins()
-    //{
-    //    PlayerPrefs.SetInt(CoinsKey, currentCoins);
-    //    PlayerPrefs.Save();
-    //}
-
-    //private void LoadCoins()
-    //{
-    //    currentCoins = PlayerPrefs.GetInt(CoinsKey, 0);
-    //}
-
+    public void ResetCoins()
+    {
+        currentCoins = 0;
+        PlayerPrefs.SetInt("PlayerCoins", currentCoins);
+        PlayerPrefs.Save();
+    }
 
 }

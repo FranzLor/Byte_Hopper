@@ -28,10 +28,36 @@ public class DebuggerTest : MonoBehaviour
 
     void ResetUnlocksForTesting()
     {
-        for (int i = 0; i < PlayerPrefs.GetInt("CharacterSelected"); i++)
+        // reset all skins by iterating through the same number of skins as in the CharacterSelection script
+        int totalSkins = transform.childCount;
+
+        for (int i = 0; i < totalSkins; i++)
         {
-            PlayerPrefs.SetInt("SkinUnlocked_" + i, 0);
+            if (i == 0)
+            {
+                // always unlock the first/default skin
+                PlayerPrefs.SetInt("SkinUnlocked_" + i, 1);  
+            }
+            else
+            {
+                PlayerPrefs.SetInt("SkinUnlocked_" + i, 0);
+            }
         }
+
         PlayerPrefs.Save();
+
+        Debug.Log("All skins have been reset to locked.");
+
+        // reload skin unlocks to update the UI
+        CharacterSelection characterSelection = FindObjectOfType<CharacterSelection>();
+        if (characterSelection != null)
+        {
+            characterSelection.LoadSkinUnlocks();
+            characterSelection.UpdateCharacterSelection();
+        }
+        else
+        {
+            Debug.LogError("CharacterSelection script not found.");
+        }
     }
 }

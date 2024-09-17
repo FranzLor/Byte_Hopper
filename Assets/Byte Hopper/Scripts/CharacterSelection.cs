@@ -15,7 +15,7 @@ public class CharacterSelection : MonoBehaviour
 
     public Text coinText;
     public Text unlockCostText;
-
+    public GameObject confirmCheckmark;
 
     void Start()
     {
@@ -53,7 +53,7 @@ public class CharacterSelection : MonoBehaviour
         UpdateCharacterSelection();
     }
 
-    void UpdateCharacterSelection()
+    public void UpdateCharacterSelection() 
     {
         // disable all character
         foreach (GameObject go in characterList)
@@ -70,11 +70,13 @@ public class CharacterSelection : MonoBehaviour
         if (skinUnlocked[index])
         {
             unlockCostText.gameObject.SetActive(false);
+            confirmCheckmark.SetActive(true);
         }
         else
         {
             unlockCostText.gameObject.SetActive(true);
             unlockCostText.text = skinPrices[index].ToString();
+            confirmCheckmark.SetActive(false);
         }
     }
 
@@ -120,9 +122,13 @@ public class CharacterSelection : MonoBehaviour
         if (skinUnlocked[index])
         {
             PlayerPrefs.SetInt("CharacterSelected", index);
-
             SceneManager.LoadScene("ByteRunner");
         }
+        else
+        {
+            PurchaseSkin();
+        }
+
         // save the selected character
         //PlayerPrefs.SetInt("CharacterSelected", index);
 
@@ -131,19 +137,27 @@ public class CharacterSelection : MonoBehaviour
 
     void PurchaseSkin()
     {
+        Debug.Log("Trying to purchase skin at index: " + index);
+
         if (!skinUnlocked[index] && CurrencyManager.instance.GetCoinBalance() >= skinPrices[index])
         {
+            Debug.Log("Sufficient coins, purchasing skin...");
             CurrencyManager.instance.SpendCoins(skinPrices[index]);
             skinUnlocked[index] = true;
             SaveSkinUnlocks();
             UpdateCharacterSelection();
         }
+        else
+        {
+            Debug.Log("Not enough coins or skin already unlocked.");
+        }
     }
 
-    void LoadSkinUnlocks()
+    public void LoadSkinUnlocks()
     {
         for (int i = 0; i < skinUnlocked.Length; i++)
         {
+            // makes sure that the first skin is always unlocked (i == 0)
             skinUnlocked[i] = PlayerPrefs.GetInt("SkinUnlocked_" + i, i == 0 ? 1 : 0) == 1;
         }
     }
