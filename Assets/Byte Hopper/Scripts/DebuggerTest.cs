@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class DebuggerTest : MonoBehaviour
 {
+#if UNITY_EDITOR
+    [SerializeField]
     public Button addCoinsButton;
+    [SerializeField]
     public Button resetCoinsButton;
+    [SerializeField]
     public Button resetUnlocksButton;
+
+#endif
 
     private CharacterSelection characterSelection;
 
