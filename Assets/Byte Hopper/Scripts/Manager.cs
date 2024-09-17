@@ -84,6 +84,7 @@ public class Manager : MonoBehaviour
         distanceCounter.text = "0";
     }
 
+    // TODO - cleanup
     public void UpdateDistanceUI()
     {
         int currentDistance = ScoreManager.instance.GetCurrentDistance();
@@ -110,8 +111,8 @@ public class Manager : MonoBehaviour
 
         if (highScoreText != null)
         {
-            highScoreText.text = "High Score: " + highScore.ToString();  // Update the text
-            highScoreText.gameObject.SetActive(true);  // Ensure the text is visible
+            highScoreText.text = "High Score: " + highScore.ToString();
+            highScoreText.gameObject.SetActive(true);
         }
     }
 
