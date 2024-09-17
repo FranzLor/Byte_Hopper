@@ -10181,12 +10181,6 @@ MonoBehaviour:
   enableAngleCheck: 1
   angleCheck: 0.3
   angleCheckDistance: 1
-  audioIdle1: {fileID: 8300000, guid: 7e8f00f64ea0cc644ba1776d9b43299c, type: 3}
-  audioIdle2: {fileID: 8300000, guid: 90edf041af1ae284d8b57637baaad334, type: 3}
-  audioJump: {fileID: 8300000, guid: 3ae19417b975fae43a2d07e46b34fbf5, type: 3}
-  audioHit: {fileID: 8300000, guid: f303a53041a52f6409df0f5901bfeada, type: 3}
-  audioSplash: {fileID: 8300000, guid: 76f2d804a4a8c604b83b6990108d4a55, type: 3}
-  audioElectrified: {fileID: 8300000, guid: 9d72cb384c2452b489e0329aeb34290c, type: 3}
 --- !u!114 &8940283916192050911
 MonoBehaviour:
   m_ObjectHideFlags: 0

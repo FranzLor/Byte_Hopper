@@ -7,9 +7,8 @@ public class CurrencyManager : MonoBehaviour
     public static CurrencyManager instance;
 
     private int currentCoins = 0;
-    private const string CoinsKey = "PlayerCoins";
 
-    private void Awake()
+    void Awake()
     {
         if (instance == null)
         {
@@ -22,32 +21,9 @@ public class CurrencyManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    void Start()
     {
-        LoadCoins();
-    }
-
-    public void AddCoins(int value)
-    {
-        currentCoins += value;
-        SaveCoins();
-    }
-
-    public bool SpendCoins(int value)
-    {
-        if (currentCoins >= value)
-        {
-            currentCoins -= value;
-            SaveCoins();
-            return true;
-        }
-        else
-        {
-            Debug.Log("Not Enough Coins");
-
-            // todo add a popup or something
-            return false;
-        }
+        currentCoins = PlayerPrefs.GetInt("PlayerCoins", 0);
     }
 
     public int GetCoinBalance()
@@ -55,16 +31,32 @@ public class CurrencyManager : MonoBehaviour
         return currentCoins;
     }
 
-    private void SaveCoins()
+    public void AddCoins(int amount)
     {
-        PlayerPrefs.SetInt(CoinsKey, currentCoins);
+        currentCoins += amount;
+        PlayerPrefs.SetInt("PlayerCoins", currentCoins);
         PlayerPrefs.Save();
     }
 
-    private void LoadCoins()
+    public void SpendCoins(int amount)
     {
-        currentCoins = PlayerPrefs.GetInt(CoinsKey, 0);
+        if (currentCoins >= amount)
+        {
+            currentCoins -= amount;
+            PlayerPrefs.SetInt("PlayerCoins", currentCoins);
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            Debug.Log("Not enough coins to spend.");
+        }
     }
 
+    public void ResetCoins()
+    {
+        currentCoins = 0;
+        PlayerPrefs.SetInt("PlayerCoins", currentCoins);
+        PlayerPrefs.Save();
+    }
 
 }
