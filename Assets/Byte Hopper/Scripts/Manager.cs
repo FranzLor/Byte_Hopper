@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Manager : MonoBehaviour
 {
     public Text coinCounter = null;
     public Text distanceCounter = null;
+    public TMP_Text highScoreText = null;
 
     public Camera camera = null;
 
     public LevelGenerator levelGenerator = null;
     public int levelCount = 10;
-
-    //private int currentCoins = 0;
-    private int currentDistance = 0;
 
     private bool canPlay = false;
 
@@ -47,6 +46,7 @@ public class Manager : MonoBehaviour
 
         // initialize manager and UI
         StartCoroutine(InitializeCoinUI());
+        InitializeDistanceUI();
     }
 
     private void UpdateCoinUI()
@@ -78,16 +78,48 @@ public class Manager : MonoBehaviour
         coinCounter.text = CurrencyManager.instance.GetCoinBalance().ToString();
     }
 
-    public void UpdateDistanceCount()
+    private void InitializeDistanceUI()
     {
-        Debug.Log("Moved");
+        highScoreText.gameObject.SetActive(false);
+        distanceCounter.text = "0";
+    }
 
-        currentDistance += 1;
+    // TODO - cleanup
+    public void UpdateDistanceUI()
+    {
+        int currentDistance = ScoreManager.instance.GetCurrentDistance();
+        int highScore = ScoreManager.instance.GetHighScore();
 
         distanceCounter.text = currentDistance.ToString();
 
+        if (currentDistance >= highScore)
+        {
+            highScoreText.gameObject.SetActive(true);
+        }
+        else
+        {
+            highScoreText.gameObject.SetActive(false);
+        }
+
         // when player moves up, generator piece, constantly generate pieces
         levelGenerator.randomGenerator();
+    }
+
+    public void UpdateHighScoreUI()
+    {
+        int highScore = ScoreManager.instance.GetHighScore();
+
+        if (highScoreText != null)
+        {
+            highScoreText.text = "High Score: " + highScore.ToString();
+            highScoreText.gameObject.SetActive(true);
+        }
+    }
+
+    public void AddDistance(int value)
+    {
+        ScoreManager.instance.AddDistance(value);
+        UpdateDistanceUI();
     }
 
     public bool CanPlay()
@@ -118,8 +150,12 @@ public class Manager : MonoBehaviour
 
     public void PlayAgain()
     {
-        Scene scene = SceneManager.GetActiveScene();
+        // reset distance score and update UI
+        ScoreManager.instance.ResetDistance();
+        InitializeDistanceUI();
 
+        // reload scene
+        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
