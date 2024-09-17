@@ -1587,6 +1587,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47d83d220e54e6c4e85eff504167a1ab, type: 3}
+--- !u!1 &325481289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325481291}
+  - component: {fileID: 325481290}
+  m_Layer: 0
+  m_Name: Score Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &325481290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325481289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f83ab855561314a8dd55165079baf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &325481291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325481289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 950.4576, y: 543.6496, z: 22.491219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &328118741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2561,6 +2605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCounter: {fileID: 1717745757}
   distanceCounter: {fileID: 1183621194}
+  highScoreText: {fileID: 1454186251}
   camera: {fileID: 1113779718}
   levelGenerator: {fileID: 1581953582}
   levelCount: 10
@@ -9806,3 +9851,4 @@ SceneRoots:
   - {fileID: 304519371}
   - {fileID: 1917600524}
   - {fileID: 1267721511}
+  - {fileID: 325481291}

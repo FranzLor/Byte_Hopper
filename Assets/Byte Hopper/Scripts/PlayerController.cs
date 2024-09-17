@@ -220,7 +220,7 @@ public class PlayerController : MonoBehaviour
         if (!visitedPositions.Contains(currentPosition))
         {
             visitedPositions.Add(currentPosition);
-            Manager.instance.UpdateDistanceCount();
+            Manager.instance.AddDistance(1);
         }
 
 

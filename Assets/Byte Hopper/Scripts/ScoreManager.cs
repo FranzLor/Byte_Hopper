@@ -14,13 +14,20 @@ public class ScoreManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(this.gameObject);
         }
         else
         {
             Destroy(this.gameObject);
         }
 
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        LoadHighScore();
+    }
+
+    public void UpdateDistance(int distance)
+    {
+        currentDistance = distance;
+        CheckForHighScore();
     }
 
 
@@ -44,6 +51,26 @@ public class ScoreManager : MonoBehaviour
     public int GetHighScore()
     {
         return highScore;
+    }
+
+    private void CheckForHighScore()
+    {
+        if (currentDistance > highScore)
+        {
+            highScore = currentDistance;
+            SaveHighScore();
+        }
+    }
+
+    private void SaveHighScore()
+    {
+        PlayerPrefs.SetInt("HighScore", highScore);
+        PlayerPrefs.Save();
+    }
+
+    private void LoadHighScore()
+    {
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
     }
 
     public void ResetDistance()
