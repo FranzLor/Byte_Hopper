@@ -142,10 +142,19 @@ public class CharacterSelection : MonoBehaviour
         if (!skinUnlocked[index] && CurrencyManager.instance.GetCoinBalance() >= skinPrices[index])
         {
             Debug.Log("Sufficient coins, purchasing skin...");
+
+            // spends coins and unlock the skin
             CurrencyManager.instance.SpendCoins(skinPrices[index]);
             skinUnlocked[index] = true;
+
+            // save immediately
             SaveSkinUnlocks();
+
+            // updates the UI for bought skin - unlocked
             UpdateCharacterSelection();
+
+            // update coin UI
+            UpdateCoinUI();
         }
         else
         {
@@ -171,7 +180,7 @@ public class CharacterSelection : MonoBehaviour
 
     }
 
-    void UpdateCoinUI()
+    public void UpdateCoinUI()
     {
         coinText.text = CurrencyManager.instance.GetCoinBalance().ToString();
     }

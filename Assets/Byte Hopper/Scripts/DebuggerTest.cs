@@ -9,8 +9,17 @@ public class DebuggerTest : MonoBehaviour
     public Button resetCoinsButton;
     public Button resetUnlocksButton;
 
+    private CharacterSelection characterSelection;
+
     void Start()
     {
+        // refer
+        characterSelection = FindObjectOfType<CharacterSelection>();
+        if (characterSelection == null)
+        {
+            Debug.LogError("CharacterSelection script not found.");
+        }
+
         addCoinsButton.onClick.AddListener(() => AddCoinsForTesting());
         resetCoinsButton.onClick.AddListener(() => ResetCoinsForTesting());
         resetUnlocksButton.onClick.AddListener(() => ResetUnlocksForTesting());
@@ -19,11 +28,27 @@ public class DebuggerTest : MonoBehaviour
     void AddCoinsForTesting()
     {
         CurrencyManager.instance.AddCoins(20);
+
+        Debug.Log("Coins added for testing.");
+
+        // update UI
+        if (characterSelection != null)
+        {
+            characterSelection.UpdateCoinUI();
+        }
     }
 
     void ResetCoinsForTesting()
     {
         CurrencyManager.instance.ResetCoins();
+
+        Debug.Log("Coins reset to zero.");
+
+        // update the UI
+        if (characterSelection != null)
+        {
+            characterSelection.UpdateCoinUI();
+        }
     }
 
     void ResetUnlocksForTesting()
@@ -48,16 +73,11 @@ public class DebuggerTest : MonoBehaviour
 
         Debug.Log("All skins have been reset to locked.");
 
-        // reload skin unlocks to update the UI
-        CharacterSelection characterSelection = FindObjectOfType<CharacterSelection>();
+        // reload skin unlocks and update the character selection UI
         if (characterSelection != null)
         {
             characterSelection.LoadSkinUnlocks();
             characterSelection.UpdateCharacterSelection();
-        }
-        else
-        {
-            Debug.LogError("CharacterSelection script not found.");
         }
     }
 }
