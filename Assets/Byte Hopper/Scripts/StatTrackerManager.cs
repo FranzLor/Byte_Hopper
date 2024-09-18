@@ -13,10 +13,6 @@ public class StatTrackerManager : MonoBehaviour
     public TMP_Text lifetimeDistanceText;
     public TMP_Text lifetimeCoinsText;
     public TMP_Text lifetimeDeathsText;
-    public TMP_Text deathByCarsText;
-    public TMP_Text deathByWaterText;
-    public TMP_Text deathByMicrochipText;
-    public TMP_Text deathByCameraText;
 
     public GameObject statTrackerScreen;
     public Button closeButton;
@@ -62,35 +58,11 @@ public class StatTrackerManager : MonoBehaviour
         UpdateUI();
     }
 
-    public void AddDeath(string cause)
+    public void AddDeath()
     {
         int lifetimeDeaths = PlayerPrefs.GetInt("LifetimeDeaths", 0);
         lifetimeDeaths++;
         PlayerPrefs.SetInt("LifetimeDeaths", lifetimeDeaths);
-
-        switch (cause)
-        {
-            case "Car":
-                int deathByCars = PlayerPrefs.GetInt("DeathByCars", 0);
-                deathByCars++;
-                PlayerPrefs.SetInt("DeathByCars", deathByCars);
-                break;
-            case "Water":
-                int deathByWater = PlayerPrefs.GetInt("DeathByWater", 0);
-                deathByWater++;
-                PlayerPrefs.SetInt("DeathByWater", deathByWater);
-                break;
-            case "Microchip":
-                int deathByMicrochip = PlayerPrefs.GetInt("DeathByMicrochip", 0);
-                deathByMicrochip++;
-                PlayerPrefs.SetInt("DeathByMicrochip", deathByMicrochip);
-                break;
-            case "Camera":
-                int deathByCamera = PlayerPrefs.GetInt("DeathByCamera", 0);
-                deathByCamera++;
-                PlayerPrefs.SetInt("DeathByCamera", deathByCamera);
-                break;
-        }
 
         PlayerPrefs.Save();
         UpdateUI();
@@ -113,14 +85,11 @@ public class StatTrackerManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        highestDistanceText.text = PlayerPrefs.GetInt("HighestDistance", 0).ToString();
+        highestDistanceText.text = ScoreManager.instance.GetHighScore().ToString();
+
         lifetimeDistanceText.text = PlayerPrefs.GetInt("LifetimeDistance", 0).ToString();
         lifetimeCoinsText.text = PlayerPrefs.GetInt("LifetimeCoins", 0).ToString();
         lifetimeDeathsText.text = PlayerPrefs.GetInt("LifetimeDeaths", 0).ToString();
-        deathByCarsText.text = PlayerPrefs.GetInt("DeathByCars", 0).ToString();
-        deathByWaterText.text = PlayerPrefs.GetInt("DeathByWater", 0).ToString();
-        deathByMicrochipText.text = PlayerPrefs.GetInt("DeathByMicrochip", 0).ToString();
-        deathByCameraText.text = PlayerPrefs.GetInt("DeathByCamera", 0).ToString();
     }
 
     public void OpenStatTracker()
