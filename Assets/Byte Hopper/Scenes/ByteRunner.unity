@@ -2010,6 +2010,10 @@ PrefabInstance:
       propertyPath: outlineTargets.Array.data[0].IsVisible
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1689999649031577557, guid: 47d83d220e54e6c4e85eff504167a1ab, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2845809004991858622, guid: 47d83d220e54e6c4e85eff504167a1ab, type: 3}
       propertyPath: coinText
       value: 
