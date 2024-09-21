@@ -257,9 +257,6 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
 
-        // stat track
-        StatTrackerManager.instance.AddDeath();
-
         Manager.instance.GameOver();
     }
 
@@ -279,9 +276,6 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
 
-        // stat track
-        StatTrackerManager.instance.AddDeath();
-
         Manager.instance.GameOver();
     }
 
@@ -296,9 +290,6 @@ public class PlayerController : MonoBehaviour
         ghost.SetActive(false);
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
-
-        // stat track
-        StatTrackerManager.instance.AddDeath();
 
         Manager.instance.GameOver();
     }

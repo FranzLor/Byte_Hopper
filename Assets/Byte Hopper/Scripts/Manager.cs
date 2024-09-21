@@ -20,6 +20,9 @@ public class Manager : MonoBehaviour
 
     public GameObject guiGameOver = null;
 
+    // flag used to track if game over - for stat tracking bug counting 2 deaths
+    private bool isGameOver = false;
+
     // manager singleton
     private static Manager staticInstance = null;
     public static Manager instance
@@ -134,9 +137,16 @@ public class Manager : MonoBehaviour
 
     public void GameOver()
     {
+        // flag used to track if game over - for stat tracking bug counting 2 deaths
+        if (isGameOver) return;
+        isGameOver = true;
+
         // pauses camera at location
         camera.GetComponent<CameraShake>().Shake();
         camera.GetComponent<CameraFollow>().enabled = false;
+
+        // stat track
+        StatTrackerManager.instance.AddDeath();
 
         GUIGameOver();
     }
@@ -150,6 +160,8 @@ public class Manager : MonoBehaviour
 
     public void PlayAgain()
     {
+        isGameOver = false;
+
         // reset distance score and update UI
         ScoreManager.instance.ResetDistance();
         InitializeDistanceUI();
