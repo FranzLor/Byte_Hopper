@@ -41,6 +41,9 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", highScore);
             PlayerPrefs.Save();
         }
+
+        // stat track
+        StatTrackerManager.instance.AddDistance(distance);
     }
 
     public int GetCurrentDistance()
@@ -66,6 +69,7 @@ public class ScoreManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("HighScore", highScore);
         PlayerPrefs.Save();
+
     }
 
     private void LoadHighScore()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CurrencyManager : MonoBehaviour
@@ -36,6 +37,9 @@ public class CurrencyManager : MonoBehaviour
         currentCoins += amount;
         PlayerPrefs.SetInt("PlayerCoins", currentCoins);
         PlayerPrefs.Save();
+
+        // stat track
+        StatTrackerManager.instance.AddCoins(amount);
     }
 
     public void SpendCoins(int amount)
