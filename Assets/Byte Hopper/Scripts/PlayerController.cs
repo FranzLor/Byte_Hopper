@@ -244,6 +244,9 @@ public class PlayerController : MonoBehaviour
 
     public void GotHit()
     {
+        // prevents multiple death triggers - fixes bug with camera shake when hit again after death
+        if (isDead) return;
+
         isDead = true;
 
         // play death particle
