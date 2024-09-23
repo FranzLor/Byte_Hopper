@@ -244,6 +244,9 @@ public class PlayerController : MonoBehaviour
 
     public void GotHit()
     {
+        // prevents multiple death triggers - fixes bug with camera shake when hit again after death
+        if (isDead) return;
+
         isDead = true;
 
         // play death particle
@@ -256,6 +259,9 @@ public class PlayerController : MonoBehaviour
         // hide main particle
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
+
+        // turn off death particle after 3 seconds
+        Invoke("TurnOffDeathParticle", 3.0f);
 
         Manager.instance.GameOver();
     }
@@ -276,6 +282,8 @@ public class PlayerController : MonoBehaviour
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
 
+        Invoke("TurnOffSplashParticle", 3.0f);
+
         Manager.instance.GameOver();
     }
 
@@ -288,10 +296,32 @@ public class PlayerController : MonoBehaviour
         AudioManager.instance.PlaySFX("Electrified");
 
         ghost.SetActive(false);
+        // hide main particle
         ParticleSystem.EmissionModule emissionModule = mainParticle.emission;
         emissionModule.enabled = false;
 
+        // turn off death particle after 3 seconds
+        Invoke("TurnOffElectrifiedParticle", 3.0f);
+
         Manager.instance.GameOver();
+    }
+
+    void TurnOffDeathParticle()
+    {
+        ParticleSystem.EmissionModule em = deathParticle.emission;
+        em.enabled = false;
+    }
+
+    void TurnOffSplashParticle()
+    {
+        ParticleSystem.EmissionModule em = splashParticle.emission;
+        em.enabled = false;
+    }
+
+    void TurnOffElectrifiedParticle()
+    {
+        ParticleSystem.EmissionModule em = deathParticle.emission;
+        em.enabled = false;
     }
 
     //public void PlayAudioClip(AudioClip clip)
