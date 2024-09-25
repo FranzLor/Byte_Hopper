@@ -1,0 +1,397 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Unity\\Byte Runner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|c:\\unity\\byte runner\\assets\\byte hopper\\scripts\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\Spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SpawnController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\SpawnController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\assets\\byte hopper\\scripts\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\assets\\byte hopper\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraShake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\CameraShake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\assets\\byte hopper\\scripts\\stattrackermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\stattrackermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\KillCollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\KillCollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\assets\\byte hopper\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\AudioManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\assets\\byte hopper\\scripts\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:assets\\byte hopper\\scripts\\animatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrafficLight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\TrafficLight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\Water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrainAudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\TrainAudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Sound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\Sound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\Electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC49CEDD-8B4A-9D32-71EC-59691BA2F921}|Assembly-CSharp.csproj|solutionrelative:Assets\\Byte Hopper\\Scripts\\Coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Manager.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Manager.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:39.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Spawner.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Spawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Spawner.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Spawner.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Spawner.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAEIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:56.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CharacterSelection.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\CharacterSelection.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAADwv7gAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:42:39.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CurrencyManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\CurrencyManager.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwDoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:32.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:50.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CameraShake.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraShake.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\CameraShake.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraShake.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\CameraShake.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:27.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KillCollider.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\KillCollider.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\KillCollider.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\KillCollider.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\KillCollider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:37.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LevelGenerator.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\LevelGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:44.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpawnController.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SpawnController.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\SpawnController.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SpawnController.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\SpawnController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:55.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mover.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Mover.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Mover.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Mover.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Mover.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDcAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:46.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\CameraFollow.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\CameraFollow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:26.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScoreManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\ScoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\ScoreManager.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\ScoreManager.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\ScoreManager.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:58:52.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatTrackerManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\StatTrackerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\StatTrackerManager.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\StatTrackerManager.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\StatTrackerManager.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwDsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T04:43:51.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DebuggerTest.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\DebuggerTest.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAuwEgAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:34.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\AudioManager.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\AudioManager.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAswJoAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:24.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SettingsMenu.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\SettingsMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:51.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Sound.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Sound.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Sound.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Sound.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Sound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:53.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TrafficLight.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrafficLight.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\TrafficLight.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrafficLight.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\TrafficLight.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:58.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TrainAudio.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrainAudio.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\TrainAudio.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\TrainAudio.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\TrainAudio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:47:00.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AnimatorController.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\AnimatorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\AnimatorController.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\AnimatorController.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\AnimatorController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:22.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Water.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Water.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Water.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Water.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Water.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:47:04.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Electric.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Electric.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Electric.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Electric.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Electric.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:36.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Byte Hopper\\Scripts\\Coin.cs",
+              "ToolTip": "C:\\Unity\\Byte Runner\\Assets\\Byte Hopper\\Scripts\\Coin.cs",
+              "RelativeToolTip": "Assets\\Byte Hopper\\Scripts\\Coin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T15:46:31.036Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
