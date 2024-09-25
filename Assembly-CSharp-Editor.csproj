@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5EFA866D-B0E9-07F6-5F71-412B88A4322F}</ProjectGuid>
+    <ProjectGuid>{4338199E-35FD-2A1B-C9C6-D796CF1F4A4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -1063,35 +1063,35 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5E3938A2-0031-0BDE-1DA1-E67D896054E6}</Project>
+      <Project>{5AB2733E-2405-1367-EC35-F7D32497535F}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{18470458-A8EB-6310-26B1-E2C26A23CE68}</Project>
+      <Project>{40017B7A-D259-A2E6-6CC7-A042FB8401B7}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{4A122C23-E90D-88A0-5271-728F0E0BD52A}</Project>
+      <Project>{58E0E59F-B450-2A31-D9FB-C0AC8FD6D4D3}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{06733D54-79CC-4293-37FF-ABA58166066E}</Project>
+      <Project>{AAAA7A5C-47DC-5938-630C-BB76AA243DBE}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{8309893C-E911-BEBC-EE10-6CC31730E899}</Project>
+      <Project>{C2387DAB-05D8-DC48-1F5B-8A70EF61EB2F}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{738E8D29-91E6-9326-7400-74050BACFA2B}</Project>
+      <Project>{DD8CC28B-E46B-4214-A9FA-4A762A1535F0}</Project>
       <Name>CFXRRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
-      <Project>{6EC06711-A490-6B06-E8D2-EBB03FCC9609}</Project>
+      <Project>{B6B5866D-0067-2025-33BC-FB924296E2DD}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{B56E5C2E-FE0A-F2C2-45D3-E2564C4DF28F}</Project>
+      <Project>{0DDEDEA4-B414-6207-8680-E92C223DF496}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
   </ItemGroup>
