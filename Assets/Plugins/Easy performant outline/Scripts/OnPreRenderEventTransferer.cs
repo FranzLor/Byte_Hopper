@@ -1,26 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace EPOOutline
-{
-    [ExecuteAlways]
-    public class OnPreRenderEventTransferer : MonoBehaviour
-    {
-        private Camera attachedCamera;
-
-        public Action<Camera> OnPreRenderEvent;
-
-        private void Awake()
-        {
-            attachedCamera = GetComponent<Camera>();
-        }
-
-        private void OnPreRender()
-        {
-            if (OnPreRenderEvent != null)
-                OnPreRenderEvent(attachedCamera);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cad6c42724f5b6fec52fe580639e06567f6b9492dcb42c8b3d73b57496df7ff7
+size 577

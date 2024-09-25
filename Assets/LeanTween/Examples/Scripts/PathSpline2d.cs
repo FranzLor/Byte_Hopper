@@ -1,36 +1,3 @@
-using UnityEngine;
-using System.Collections;
-using DentedPixel;
-
-public class PathSpline2d : MonoBehaviour {
-
-	public Transform[] cubes;
-
-	public GameObject dude1;
-	public GameObject dude2;
-
-	private LTSpline visualizePath;
-
-	void Start () {
-		Vector3[] path = new Vector3[] {
-			cubes[0].position,
-			cubes[1].position,
-			cubes[2].position,
-			cubes[3].position,
-			cubes[4].position
-		};
-
-		visualizePath = new LTSpline( path );
-		// move
-		LeanTween.moveSpline(dude1, path, 10f).setOrientToPath2d(true).setSpeed(2f);
-
-		// move Local
-		LeanTween.moveSplineLocal(dude2, path, 10f).setOrientToPath2d(true).setSpeed(2f);
-	}
-
-	void OnDrawGizmos(){
-		Gizmos.color = Color.red;
-		if(visualizePath!=null)
-			visualizePath.gizmoDraw();
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0dc1842bbdf38d808d1694c28a2bee331a357650b3c3d96c00a9e6d6ed0f3aff
+size 737

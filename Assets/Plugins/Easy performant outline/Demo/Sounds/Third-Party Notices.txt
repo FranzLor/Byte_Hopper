@@ -1,18 +1,3 @@
-This asset is governed by the Asset Store EULA;
-however, the following components are governed by the licenses indicated below:
-
-Eat.wav
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-https://freesound.org/people/Bash360/sounds/214854/
-
-Chicken.wav
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-https://freesound.org/people/tom_woysky/sounds/232495/
-
-Walk.wav
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-https://freesound.org/people/Magdaadga/sounds/420400/
-
-Ignition.wav
-CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-https://freesound.org/people/prometheus888/sounds/458461/
+version https://git-lfs.github.com/spec/v1
+oid sha256:d20f2fbc0bf5b307ce981c594207701c0bc32642f3e136c09565805d72cd4fe4
+size 621

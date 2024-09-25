@@ -1,11 +1,3 @@
-ALL FILES IN THIS PACK ARE ROYALTY-FREE FOR COMMERCIAL & NON COMMERCIAL PROJECTS. 
-
-PLEASE CREDIT THE AUTHOR BELOW IN ANY PROJECTS THIS WORK IS USED IN:
-@JDSherbert
-
-----------------------------------------------------------------
-This material is Copyright ©2022 to Joshua "JDSherbert" Herbert.
-Do not copy, edit, or redistribute this material without the artist's prior consent.
-By purchasing this product, you agree to the terms in this licence.
-All rights reserved.
-----------------------------------------------------------------
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9316fcc9c5510469b67d04fa428391348975e06b888264e36104eb54b8e8b0a
+size 545

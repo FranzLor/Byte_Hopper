@@ -1,24 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-#pragma warning disable CS0649
-
-namespace EPOOutline.Demo
-{
-    public class CameraController : MonoBehaviour
-    {
-        [SerializeField]
-        private Vector3 shift;
-
-        [SerializeField]
-        private float moveSpeed = 2.0f;
-
-        [SerializeField]
-        private Transform target;
-
-        private void Update()
-        {
-            transform.position = Vector3.Lerp(transform.position, target.position + shift, Time.deltaTime * moveSpeed);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f48a64d944796fadf8000a6844c65295ee02478be2fa990346f4ded77879b697
+size 581

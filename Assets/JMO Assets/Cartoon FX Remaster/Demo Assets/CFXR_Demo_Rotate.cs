@@ -1,21 +1,3 @@
-﻿//--------------------------------------------------------------------------------------------------------------------------------
-// Cartoon FX
-// (c) 2012-2020 Jean Moreno
-//--------------------------------------------------------------------------------------------------------------------------------
-
-using UnityEngine;
-
-namespace CartoonFX
-{
-	public class CFXR_Demo_Rotate : MonoBehaviour
-	{
-		public Vector3 axis = new Vector3(0,1,0);
-		public Vector3 center;
-		public float speed = 1.0f;
-
-		void Update()
-		{
-			this.transform.RotateAround(center, axis, speed * Time.deltaTime);
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fa9d396bfddd963747e041ff2ffbe9410478c05e58e2e7ece4e105e55f74a12
+size 618

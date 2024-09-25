@@ -1,24 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class TrafficLight : MonoBehaviour
-{
-    public GameObject light = null;
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "train")
-        {
-            light.SetActive(true);
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "train")
-        {
-            light.SetActive(false);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ae845cb1f26f8036f728a6dd2dd28f02bb10d9313761092dc7c26c352af81cc
+size 470

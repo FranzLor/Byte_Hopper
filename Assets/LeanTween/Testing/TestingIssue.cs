@@ -1,33 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
-using DentedPixel;
-
-public class TestingIssue : MonoBehaviour {
-
-	LTDescr lt,ff;
-	int id,fid;
-
-	void Start () {
-		LeanTween.init();
-		
-		lt = LeanTween.move(gameObject,100*Vector3.one,2);
-		id = lt.id;
-		LeanTween.pause(id);
-
-		ff = LeanTween.move(gameObject,Vector3.zero,2);
-		fid = ff.id;
-		LeanTween.pause(fid);
-	}
-
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.A))
-		{
-			// Debug.Log("id:"+id);
-			LeanTween.resume(id);
-		}
-		if(Input.GetKeyDown(KeyCode.D))
-		{
-			LeanTween.resume(fid);
-		}
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a40fd548d78feba6be99dffc71e6f0c7e168d909eb4e28a8ec0701fd6177e050
+size 552
