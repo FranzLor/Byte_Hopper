@@ -21,3 +21,4 @@ UserSettings/
 # Ignore crash reports, builds, etc...
 *.pidb
 *.booproj
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
