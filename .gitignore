@@ -21,3 +21,4 @@ UserSettings/
 # Ignore crash reports, builds, etc...
 *.pidb
 *.booproj
+.vs/Byte_Runner/FileContentIndex/6f86a0a0-d276-4d16-8ecb-ed3dde443eff.vsidx
