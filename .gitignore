@@ -1,4 +1,4 @@
-# Unity generated folders..
+# Unity generated folders
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -21,4 +21,4 @@ UserSettings/
 # Ignore crash reports, builds, etc...
 *.pidb
 *.booproj
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
+.vs/Byte_Runner/FileContentIndex/6f86a0a0-d276-4d16-8ecb-ed3dde443eff.vsidx
