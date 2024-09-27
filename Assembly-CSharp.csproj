@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{18470458-A8EB-6310-26B1-E2C26A23CE68}</ProjectGuid>
+    <ProjectGuid>{40017B7A-D259-A2E6-6CC7-A042FB8401B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1097,28 +1097,36 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{5E3938A2-0031-0BDE-1DA1-E67D896054E6}</Project>
+      <Project>{5AB2733E-2405-1367-EC35-F7D32497535F}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="I2TextAnimationEditor.csproj">
+      <Project>{6F3E4757-FCA6-F434-0614-8094A83B7773}</Project>
+      <Name>I2TextAnimationEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
-      <Project>{06733D54-79CC-4293-37FF-ABA58166066E}</Project>
+      <Project>{AAAA7A5C-47DC-5938-630C-BB76AA243DBE}</Project>
       <Name>KinoBloom.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj">
-      <Project>{8309893C-E911-BEBC-EE10-6CC31730E899}</Project>
+      <Project>{C2387DAB-05D8-DC48-1F5B-8A70EF61EB2F}</Project>
       <Name>ToonyColorsPro.Demo.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
-      <Project>{738E8D29-91E6-9326-7400-74050BACFA2B}</Project>
+      <Project>{DD8CC28B-E46B-4214-A9FA-4A762A1535F0}</Project>
       <Name>CFXRRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="CFXREditor.csproj">
-      <Project>{6EC06711-A490-6B06-E8D2-EBB03FCC9609}</Project>
+      <Project>{B6B5866D-0067-2025-33BC-FB924296E2DD}</Project>
       <Name>CFXREditor</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRDemo.csproj">
-      <Project>{B56E5C2E-FE0A-F2C2-45D3-E2564C4DF28F}</Project>
+      <Project>{0DDEDEA4-B414-6207-8680-E92C223DF496}</Project>
       <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="I2TextAnimation.csproj">
+      <Project>{F6E1483B-CA05-A733-3E64-FF65D8CC921E}</Project>
+      <Name>I2TextAnimation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
