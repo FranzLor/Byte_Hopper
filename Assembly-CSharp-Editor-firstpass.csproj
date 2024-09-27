@@ -1070,6 +1070,10 @@
       <Project>{5AB2733E-2405-1367-EC35-F7D32497535F}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+    <ProjectReference Include="I2TextAnimationEditor.csproj">
+      <Project>{6F3E4757-FCA6-F434-0614-8094A83B7773}</Project>
+      <Name>I2TextAnimationEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="KinoBloom.Runtime.csproj">
       <Project>{AAAA7A5C-47DC-5938-630C-BB76AA243DBE}</Project>
       <Name>KinoBloom.Runtime</Name>
@@ -1089,6 +1093,10 @@
     <ProjectReference Include="CFXRDemo.csproj">
       <Project>{0DDEDEA4-B414-6207-8680-E92C223DF496}</Project>
       <Name>CFXRDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="I2TextAnimation.csproj">
+      <Project>{F6E1483B-CA05-A733-3E64-FF65D8CC921E}</Project>
+      <Name>I2TextAnimation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
