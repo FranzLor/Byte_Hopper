@@ -98,6 +98,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralAdvancedTechniques.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\CharacterSelection.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\LevelGenerator.cs" />
+    <Compile Include="Assets\Byte Hopper\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSceneSwitching.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\Mover.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing246.cs" />
