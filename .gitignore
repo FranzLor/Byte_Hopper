@@ -1,1 +1,28 @@
-Library/
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+UserSettings/
+
+# Ignore Visual Studio and Rider files
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+.vs/
+
+# Ignore Unity asset meta files
+*.unityproj
+
+# Ignore crash reports, builds, etc.
+*.pidb
+*.booproj
+
+# Ignore the debug and release folders
+obj/Debug/
+obj/Release/
