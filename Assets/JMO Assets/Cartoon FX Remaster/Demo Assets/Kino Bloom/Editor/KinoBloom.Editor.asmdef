@@ -1,16 +1,3 @@
-{
-    "name": "ToonyColorsPro.Demo.Editor",
-    "references": [
-        "KinoBloom.Runtime"
-    ],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b09dc3f5549b2dafa5909c5119c914dfc8c562779f5067269db5cb83823768b1
+size 380

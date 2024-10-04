@@ -1,22 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Electric : MonoBehaviour
-{
-    bool hitElectricity = false;
-
-    void OnTriggerStay(Collider other)
-    {
-        if (hitElectricity) return;
-
-        if (other.tag == "Player")
-        {
-            PlayerController playerController = other.GetComponent<PlayerController>();
-
-            hitElectricity = true;
-
-            playerController.Electrified();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecee05254b48132014727fd035cf52280d38b4269ab506a06ddc4657de0a5ab1
+size 490

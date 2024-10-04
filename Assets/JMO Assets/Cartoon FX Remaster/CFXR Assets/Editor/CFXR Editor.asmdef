@@ -1,14 +1,3 @@
-{
-    "name": "CFXREditor",
-    "references": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d21c82b5d98457f11236c0cd3b7bb0dd836d253a228175f9f42596151ecaef92
+size 329

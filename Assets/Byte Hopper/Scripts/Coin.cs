@@ -1,29 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Coin : MonoBehaviour
-{
-    public int coinValue = 1;
-
-    // used to make sure audio plays first before audio is destroyed
-    public GameObject coin = null;
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player") 
-        {
-            Debug.Log("Coin Collected");
-
-            Manager.instance.UpdateCoinCount(coinValue);
-
-            // disable coin obj
-            coin.SetActive(false);
-
-            AudioManager.instance.PlaySFX("Coin");
-
-            // destroy coin after audio is done playing
-            Destroy(this.gameObject, 0.45f);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cdc70ba50d368b198ca7bf0a2cd5998f3b473bc7302a7a99bb156c23dc4b1e0
+size 936

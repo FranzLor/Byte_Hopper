@@ -1,14 +1,3 @@
-{
-    "name": "CFXRDemo",
-    "references": [
-        "CFXRRuntime"
-    ],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf15ac25eb046eb0348d3348000781cb1ada653c98ff091eaa437de1984b3db1
+size 332

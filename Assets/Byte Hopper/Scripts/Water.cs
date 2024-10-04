@@ -1,28 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Water : MonoBehaviour
-{
-    bool hitWater = false;
-
-    void OnTriggerStay(Collider other)
-    {
-        if (hitWater) return;
-
-
-        if (other.tag == "Player")
-        {
-            PlayerController playerController = other.GetComponent<PlayerController>();
-
-            // if jumped on water
-            if (!playerController.parentedToObject && !playerController.isJumping)
-            {
-                Debug.Log("Player is in water");
-                hitWater = true;
-
-                playerController.InWater();
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bbb0b8287b962a0fac7e9709f30d970917dfb640889195eb06c75fce37158b9d
+size 674
