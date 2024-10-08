@@ -88,6 +88,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSpline.cs" />
     <Compile Include="Assets\LeanTween\Testing\Testing240.cs" />
+    <Compile Include="Assets\Byte Hopper\Scripts\LightingPreset.cs" />
     <Compile Include="Assets\LeanTween\Testing\Scripts\LeanPool.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingSequencer.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Assets\LeanTween\Framework\LTSeq.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\Electric.cs" />
+    <Compile Include="Assets\Byte Hopper\Scripts\LightingManager.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralEasingTypes.cs" />
     <Compile Include="Assets\LeanTween\Framework\LeanTween.cs" />
