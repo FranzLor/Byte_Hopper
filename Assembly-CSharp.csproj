@@ -78,6 +78,7 @@
     <Compile Include="Assets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\PathSplineEndless.cs" />
+    <Compile Include="Assets\Byte Hopper\Scripts\LightController.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
     <Compile Include="Assets\Byte Hopper\Scripts\Manager.cs" />
     <Compile Include="Assets\LeanTween\Testing\TestingRotate.cs" />
