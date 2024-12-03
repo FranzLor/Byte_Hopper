@@ -8,6 +8,9 @@ TagManager:
   - train
   - coin
   - electric
+  - Undefined
+  - Tree
+  - IgnoreLightingManager
   layers:
   - Default
   - TransparentFX
