@@ -1,37 +1,8 @@
 # Unity generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Ll]ogs/
-UserSettings/
+/*
 
-# Ignore auto-generated Visual Studio and Rider project files..
-.vscode/
-.idea/
-*.csproj
-*.sln
-*.suo
-*.user
-*.userprefs
+# Allow the build folder
+!Build/
 
-# Ignore Unity asset meta files...
-*.unityproj
-
-# Ignore crash reports, builds, etc...
-*.pidb
-*.booproj
-.vs/Byte_Runner/FileContentIndex/6f86a0a0-d276-4d16-8ecb-ed3dde443eff.vsidx
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-.vs/Byte_Runner/FileContentIndex/0fe1a8d6-c09a-4c18-98a3-b8c310d06d8a.vsidx
-.vs/Byte_Runner/FileContentIndex/5a6492fc-7b2c-408d-bd76-9aca8f609e2e.vsidx
-/.vs
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-*.cache
-*.cache
-*.log
-Logs/shadercompiler-UnityShaderCompiler.exe0.log
-*.cache
+!.gitignore
+!.gitattributes
