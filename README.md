@@ -7,17 +7,20 @@ It was made using the *Unity Engine* with C#.
 
 **Procedural Generation**<br>
 There are a total of 8 different types of areas. After the starting areas, and as the player progresses, the map will be randomly generated based off those 8 areas.
-![ProceduralGeneration](https://github.com/user-attachments/assets/efcfc385-4589-44a8-b68f-c80751102ebb)
+![ProceduralGen](https://github.com/user-attachments/assets/21b06d36-6d7a-42ea-974d-531cd028f380)
+
 <br>
  
 **Dynamic Map**<br>
 There is a day-and-night cycle. This aims to increase the difficulty for the player.
-![DyanmicMap](https://github.com/user-attachments/assets/55994723-db67-4ff8-91fa-1c1730b7b209)
+![Dynamic](https://github.com/user-attachments/assets/a51befc6-0e47-4d81-a736-e1e0c426e983)
+
 <br>
 
 **Customization Shop**<br>
 The game includes a skin shop that gives the player incentive on the CPU that they collect. There are 3 styles they can choose from.
-![SkinShop](https://github.com/user-attachments/assets/78285277-9f70-4651-8528-90a62d949b8f)
+![Shop](https://github.com/user-attachments/assets/68246f4b-3dbe-4271-9361-aa8f500998ac)
+
 <br>
  
 **Stat Tracking**<br>
