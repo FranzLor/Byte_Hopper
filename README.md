@@ -7,7 +7,7 @@ It was made using the *Unity Engine* with C#.
 
 **Procedural Generation**<br>
 There are a total of 8 different types of areas. After the starting areas, and as the player progresses, the map will be randomly generated based off those 8 areas.
-![ProceduralGen](https://github.com/user-attachments/assets/21b06d36-6d7a-42ea-974d-531cd028f380)
+![Procedural](https://github.com/user-attachments/assets/85f96745-0f0b-497f-8115-48ecfddba73d)
 
 <br>
  
